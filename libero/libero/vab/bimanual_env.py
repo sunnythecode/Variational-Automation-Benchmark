@@ -59,8 +59,11 @@ class VABBimanualEnv(TwoArmEnv):
                 f" got {len(task.robots) if task.robots else 0}"
             )
 
+        # crate_washing has its own `robot_platform` body in the MJCF; no
+        # RethinkMount pedestal is needed. Use OnTheGroundPanda (gripper +
+        # arm only) to match the original deleted Libero_Crate_Washing class.
         robot_classes = [
-            f"Mounted{spec.name.capitalize()}" for spec in task.robots
+            f"OnTheGround{spec.name.capitalize()}" for spec in task.robots
         ]
         # Use the first robot's controller for both (per robosuite TwoArmEnv).
         controller_configs = suite.load_controller_config(
@@ -104,14 +107,28 @@ class VABBimanualEnv(TwoArmEnv):
 
     def _load_model(self):
         super()._load_model()
-        # The crate-washing scene XML places the two robots on a shared
-        # platform; pick base offsets that put them side-by-side facing the
-        # crate stack.
-        for idx, robot in enumerate(self.robots):
-            offset = (-0.30, -0.40, 1.05) if idx == 0 else (-0.30, 0.40, 1.05)
-            robot.robot_model.set_base_xpos(offset)
         mujoco_arena = CrateWashingArena()
+
+        # Robot base positions + yaw match the deleted Libero_Crate_Washing
+        # constants. Two OnTheGroundPandas on the scene's robot_platform body,
+        # rotated 180 deg so the grippers face the crate stack.
+        base_positions = [(1.74, -0.20, 0.76), (1.74, 0.20, 0.76)]
+        base_yaw = np.pi
+        for robot, pos in zip(self.robots, base_positions):
+            robot.robot_model.set_base_xpos(pos)
+            robot.robot_model.set_base_ori((0.0, 0.0, base_yaw))
+
         mujoco_arena.set_origin([0.0, 0.0, 0.0])
+
+        # Add an `agentview` camera framing both arms + crate stack so we get
+        # a useful view from the canonical camera name. Inherited from the
+        # deleted BimanualBDDLBaseDomain._setup_camera.
+        mujoco_arena.set_camera(
+            camera_name="agentview",
+            pos=[1.0, -1.5, 1.6],
+            quat=[0.816937, 0.5495927, -0.0975822, -0.1450502],
+        )
+
         self.model = ManipulationTask(
             mujoco_arena=mujoco_arena,
             mujoco_robots=[r.robot_model for r in self.robots],

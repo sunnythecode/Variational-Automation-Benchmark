@@ -4,7 +4,7 @@ arena: {name: crate_washing}
 robots:
   - {name: panda, controller: OSC_POSE}
   - {name: panda, controller: OSC_POSE}
-cameras: [bimanual_agentview, robot0_eye_in_hand, robot1_eye_in_hand]
+cameras: [agentview, robot0_eye_in_hand, robot1_eye_in_hand]
 camera_height: 128
 camera_width: 128
 camera_depth: false
