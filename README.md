@@ -174,7 +174,7 @@ libero/libero/
     ├── bimanual_env.py             # crate_washing
     ├── predicates.py
     └── _arena_table.py
-tasks/                              # 42 task YAMLs across 6 suites
+tasks/                              # 52 task YAMLs across 7 suites
 tests/test_smoke.py
 tools/                              # one-shot porting tools
 ├── port_legacy_bddl.py             # BDDL -> YAML scaffold (no inits)
