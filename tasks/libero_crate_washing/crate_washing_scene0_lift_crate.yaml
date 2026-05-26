@@ -1,0 +1,26 @@
+id: libero_crate_washing.crate_washing_scene0_lift_crate
+language: lift the top crate off the stack with both arms and place it on the washing machine table
+arena: {name: crate_washing}
+robots:
+  - {name: panda, controller: OSC_POSE}
+  - {name: panda, controller: OSC_POSE}
+cameras: [agentview, robot0_eye_in_hand, robot1_eye_in_hand]
+camera_height: 128
+camera_width: 128
+camera_depth: false
+objects: []          # 11-crate stack + machine + platform are baked into the scene MJCF
+inits:
+  - {}               # no movable objects to seed; physics settles from the MJCF defaults
+  - {}
+default_init_index: 0
+success:
+  predicate: lifted_above
+  args:
+    obj: crate_box_11
+    z_min: 1.45      # top of the stack is ~1.40; success once lifted clearly above
+horizon: 1000
+metadata:
+  suite: libero_crate_washing
+  source: ported_from_bddl
+  original_goal: "Sequence(Lifted crate_box_11; Placed crate_box_11)"
+  v1_note: "Single-stage 'lifted' check; full Lifted->Placed sequence pending stage-aware SuccessSpec."

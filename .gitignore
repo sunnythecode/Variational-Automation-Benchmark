@@ -14,5 +14,8 @@ bert/
 logs/
 
 *.mp4
+!videos/*.mp4
 libero.egg-info/
 .vscode/
+__pycache__/
+benchmark_tasks/
