@@ -6,7 +6,7 @@ init file, no privileged information surfaced to the agent.
 
 ## Suites
 
-52 tasks across 7 suites under `tasks/`:
+62 tasks across 8 suites under `tasks/`:
 
 | Suite | Tasks × Seeds | Description |
 | --- | --- | --- |
@@ -14,7 +14,8 @@ init file, no privileged information surfaced to the agent.
 | `libero_object_target_permutation_variance` | 10 × 50 | Target basket and distractor objects permuted across the workspace. |
 | `libero_object_target_basket_swap_variance` | 10 × 50 | Target basket swapped with distractor basket on each trial. |
 | `libero_object_all_variance` | 10 × 50 | Combined variance suite: position, permutation, and basket-swap perturbations applied jointly. |
-| `libero_object_packing` | 10 × 50 | Multi-item packing variant of `libero_object_all_variance` — every grocery item on the floor must end up in the basket. Uses the stateful `pack_all_into` predicate (delivered items teleport to a far graveyard pose so they cannot regress; success when all 6 delivered). Reports both `success` (binary) and `completion_rate` (`delivered/6`). |
+| `libero_object_packing` | 10 × 50 | Multi-item packing variant of `libero_object_all_variance` — every grocery item on the floor must end up in the basket under the **combined** variance distribution (position + permutation + basket-swap). Uses the stateful `pack_all_into` predicate (delivered items teleport to a far graveyard pose so they cannot regress; success when all 6 delivered). Reports both `success` (binary) and `completion_rate` (`delivered/6`). |
+| `permutation_packing` | 10 × 50 | Multi-item packing variant of `libero_object_target_permutation_variance` — same `pack_all_into` success criterion as `libero_object_packing`, but trials only vary along the **permutation axis** (basket and distractors permuted; position and basket-swap held fixed). Differential against `libero_object_packing` isolates how much packing-policy robustness comes from generalising over object permutations alone vs. the combined variance distribution. |
 | `libero_popcorn_production` | 1 × 50 | Single-task multi-stage suite — place frypan on stove → turn on → turn off → remove. **v1 success check is single-stage (`on_top_of`)**; full sequence pending stage-aware `SuccessSpec`. |
 | `libero_crate_washing` | 1 × 5 | Bimanual single-task suite — two Franka Pandas lift the top crate of an 11-crate stack onto a washing-machine table. **v1 success check is `lifted_above`**; full `Lifted → Placed` sequence pending. |
 
@@ -174,11 +175,13 @@ libero/libero/
     ├── bimanual_env.py             # crate_washing
     ├── predicates.py
     └── _arena_table.py
-tasks/                              # 52 task YAMLs across 7 suites
+tasks/                              # 62 task YAMLs across 8 suites
 tests/test_smoke.py
-tools/                              # one-shot porting tools
+tools/                              # one-shot porting + suite-derivation tools
 ├── port_legacy_bddl.py             # BDDL -> YAML scaffold (no inits)
 ├── apply_extracted_inits.py        # patch YAMLs with extracted world poses
+├── build_object_packing.py         # derive libero_object_packing from libero_object_all_variance
+├── build_permutation_packing.py    # derive permutation_packing from libero_object_target_permutation_variance
 └── record_video.py                 # 2-seed-per-task sampler video
 videos/                             # pre-rendered MP4s
 ```
