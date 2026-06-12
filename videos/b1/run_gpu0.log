@@ -1,0 +1,2294 @@
+22:22:15 INFO Worker shard=0 tasks=0:2 n_tasks=2 csv=timings_gpu0.csv
+22:22:15 INFO Warming up cuRobo planner...
+22:22:17 INFO CuRobo kernel backend: 'cuda_core'
+22:22:17 INFO cuda.core backend initialized: sm_70
+22:22:17 INFO Compiling kernel: curobo::kinematics::kinematics_fused_kernel<false, 13>
+22:22:18 INFO Successfully compiled kernel: curobo::kinematics::kinematics_fused_kernel<false, 13>
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 3 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 3 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 1 costs for robot rollout
+22:22:18 INFO Initialized 1 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 1 costs for robot rollout
+22:22:18 INFO Initialized 1 costs for robot rollout
+22:22:18 INFO Updating state_seq buffer reference (created new tensor)
+22:22:18 INFO Updating state_seq buffer reference (created new tensor)
+22:22:18 INFO Seed IK Solver initialized for robot with 7 DOF
+22:22:18 INFO Controlled links: ['panda_hand']
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 3 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 3 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 1 costs for robot rollout
+22:22:18 INFO Initialized 1 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 1 costs for robot rollout
+22:22:18 INFO Initialized 1 costs for robot rollout
+22:22:18 INFO Updating state_seq buffer reference (created new tensor)
+22:22:18 INFO Updating state_seq buffer reference (created new tensor)
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 3 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 3 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 2 costs for robot rollout
+22:22:18 INFO Initialized 3 costs for robot rollout
+22:22:18 INFO Planner ready.
+22:22:18 INFO === Task: pick_up_the_alphabet_soup_and_place_it_in_the_basket ===
+22:22:21 INFO Setting batch size to 1
+22:22:21 INFO Setting batch size to 32
+22:22:21 INFO Recording CUDA Graph for _compute_pose_error_and_jacobian
+22:22:21 INFO Compiling kernel: curobo::kinematics::kinematics_fused_jacobian_kernel<false, 13>
+22:22:22 INFO Successfully compiled kernel: curobo::kinematics::kinematics_fused_jacobian_kernel<false, 13>
+22:22:22 INFO Compiling kernel: curobo::kinematics::kinematics_fused_backward_unified_kernel<float, float, 16, true, false>
+22:22:22 INFO Successfully compiled kernel: curobo::kinematics::kinematics_fused_backward_unified_kernel<float, float, 16, true, false>
+22:22:23 INFO Recording CUDA Graph for _levenberg_marquardt_step_inner_iterations_impl
+22:22:24 INFO exploration_idx.shape != (num_problems, n_linesearch): torch.Size([1, 4]) != (32, 4)
+22:22:24 INFO selected_idx.shape != (num_problems, n_linesearch): torch.Size([1, 4]) != (32, 4)
+22:22:24 INFO exploration_idx.shape != (num_problems, n_linesearch): torch.Size([1, 4]) != (32, 4)
+22:22:24 INFO selected_idx.shape != (num_problems, n_linesearch): torch.Size([1, 4]) != (32, 4)
+22:22:24 INFO Updating state_seq buffer reference (created new tensor)
+22:22:24 INFO Updating state_seq buffer reference (created new tensor)
+22:22:24 INFO Updating state_seq buffer reference (created new tensor)
+22:22:24 INFO Recording CUDA Graph for _compute_metrics_from_action_impl
+22:22:24 INFO Updating state_seq buffer reference (created new tensor)
+22:22:24 INFO Compiling kernel: curobo::geometry::self_collision::self_collision_max_distance_kernel<false>
+22:22:25 INFO Successfully compiled kernel: curobo::geometry::self_collision::self_collision_max_distance_kernel<false>
+22:22:25 INFO exploration_idx.shape != (num_problems, n_linesearch): torch.Size([1, 4]) != (4, 4)
+22:22:25 INFO selected_idx.shape != (num_problems, n_linesearch): torch.Size([1, 4]) != (4, 4)
+22:22:25 INFO exploration_idx.shape != (num_problems, n_linesearch): torch.Size([1, 4]) != (4, 4)
+22:22:25 INFO selected_idx.shape != (num_problems, n_linesearch): torch.Size([1, 4]) != (4, 4)
+22:22:25 INFO Updating state_seq buffer reference (created new tensor)
+22:22:25 INFO Updating state_seq buffer reference (created new tensor)
+22:22:25 INFO Updating state_seq buffer reference (created new tensor)
+22:22:25 INFO Updating state_seq buffer reference (created new tensor)
+22:22:25 INFO Compiling kernel: curobo::trajectory::bspline::interpolate_bspline_kernel<float, 3, (curobo::trajectory::bspline::BasisBackend)2>
+22:22:25 INFO Successfully compiled kernel: curobo::trajectory::bspline::interpolate_bspline_kernel<float, 3, (curobo::trajectory::bspline::BasisBackend)2>
+22:22:25 INFO Compiling kernel: curobo::trajectory::bspline::bspline_backward_kernel<3, float, (curobo::trajectory::bspline::BasisBackend)2>
+22:22:26 INFO Successfully compiled kernel: curobo::trajectory::bspline::bspline_backward_kernel<3, float, (curobo::trajectory::bspline::BasisBackend)2>
+22:22:26 INFO Compiling kernel: curobo::optimization::line_search::kernel_line_search<float, 4>
+22:22:26 INFO Successfully compiled kernel: curobo::optimization::line_search::kernel_line_search<float, 4>
+22:22:26 INFO Running optimizer 1/1: LBFGSOpt
+22:22:26 INFO Recording CUDA Graph for _opt_iters
+22:22:26 INFO Compiling kernel: curobo::optimization::kernel_lbfgs_step_shared_memory<float, false, 27>
+22:22:26 INFO Successfully compiled kernel: curobo::optimization::kernel_lbfgs_step_shared_memory<float, false, 27>
+22:22:28 INFO Recording CUDA Graph for _compute_metrics_from_action_impl
+22:22:28 INFO Updating state_seq buffer reference (created new tensor)
+22:22:28 INFO Compiling kernel: curobo::trajectory::bspline::interpolate_bspline_single_dt_kernel<float, 3, (curobo::trajectory::bspline::BasisBackend)2>
+22:22:28 INFO Successfully compiled kernel: curobo::trajectory::bspline::interpolate_bspline_single_dt_kernel<float, 3, (curobo::trajectory::bspline::BasisBackend)2>
+22:22:28 INFO Recording CUDA Graph for _compute_metrics_from_state_impl
+22:22:29 INFO Running optimizer 1/1: LBFGSOpt
+22:22:29 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=8070.7
+22:22:29 INFO Running optimizer 1/1: LBFGSOpt
+22:22:29 INFO Running optimizer 1/1: LBFGSOpt
+22:22:29 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=145.5
+22:22:31 INFO Running optimizer 1/1: LBFGSOpt
+22:22:31 INFO Running optimizer 1/1: LBFGSOpt
+22:22:31 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.3
+22:22:34 INFO Running optimizer 1/1: LBFGSOpt
+22:22:34 INFO Running optimizer 1/1: LBFGSOpt
+22:22:35 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.6
+22:22:37 INFO Running optimizer 1/1: LBFGSOpt
+22:22:37 INFO Running optimizer 1/1: LBFGSOpt
+22:22:37 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=105.7
+22:22:40 INFO Running optimizer 1/1: LBFGSOpt
+22:22:40 INFO Running optimizer 1/1: LBFGSOpt
+22:22:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.0
+22:22:44 INFO Running optimizer 1/1: LBFGSOpt
+22:22:44 INFO Running optimizer 1/1: LBFGSOpt
+22:22:44 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.6
+22:22:45 INFO   init00 [OK] plan=8817ms exec=14821ms steps=647 wall=24.7s (SR=100% 1/1)
+22:22:46 INFO Running optimizer 1/1: LBFGSOpt
+22:22:46 INFO Running optimizer 1/1: LBFGSOpt
+22:22:46 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=114.0
+22:22:46 INFO Running optimizer 1/1: LBFGSOpt
+22:22:46 INFO Running optimizer 1/1: LBFGSOpt
+22:22:46 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.7
+22:22:48 INFO Running optimizer 1/1: LBFGSOpt
+22:22:48 INFO Running optimizer 1/1: LBFGSOpt
+22:22:48 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.3
+22:22:52 INFO Running optimizer 1/1: LBFGSOpt
+22:22:52 INFO Running optimizer 1/1: LBFGSOpt
+22:22:52 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=131.2
+22:22:55 INFO Running optimizer 1/1: LBFGSOpt
+22:22:55 INFO Running optimizer 1/1: LBFGSOpt
+22:22:55 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=104.5
+22:22:58 INFO Running optimizer 1/1: LBFGSOpt
+22:22:59 INFO Running optimizer 1/1: LBFGSOpt
+22:22:59 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=151.8
+22:23:03 INFO Running optimizer 1/1: LBFGSOpt
+22:23:03 INFO Running optimizer 1/1: LBFGSOpt
+22:23:03 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=121.5
+22:23:04 INFO   init01 [OK] plan=926ms exec=16478ms steps=687 wall=18.6s (SR=100% 2/2)
+22:23:05 INFO Running optimizer 1/1: LBFGSOpt
+22:23:05 INFO Running optimizer 1/1: LBFGSOpt
+22:23:05 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.0
+22:23:05 INFO Running optimizer 1/1: LBFGSOpt
+22:23:05 INFO Running optimizer 1/1: LBFGSOpt
+22:23:05 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.3
+22:23:07 INFO Running optimizer 1/1: LBFGSOpt
+22:23:07 INFO Running optimizer 1/1: LBFGSOpt
+22:23:07 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.0
+22:23:11 INFO Running optimizer 1/1: LBFGSOpt
+22:23:11 INFO Running optimizer 1/1: LBFGSOpt
+22:23:11 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.1
+22:23:13 INFO Running optimizer 1/1: LBFGSOpt
+22:23:13 INFO Running optimizer 1/1: LBFGSOpt
+22:23:13 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.2
+22:23:16 INFO Running optimizer 1/1: LBFGSOpt
+22:23:16 INFO Running optimizer 1/1: LBFGSOpt
+22:23:16 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=138.9
+22:23:20 INFO Running optimizer 1/1: LBFGSOpt
+22:23:20 INFO Running optimizer 1/1: LBFGSOpt
+22:23:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.5
+22:23:21 INFO   init02 [OK] plan=824ms exec=14507ms steps=638 wall=16.5s (SR=100% 3/3)
+22:23:22 INFO Running optimizer 1/1: LBFGSOpt
+22:23:22 INFO Running optimizer 1/1: LBFGSOpt
+22:23:22 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.3
+22:23:22 INFO Running optimizer 1/1: LBFGSOpt
+22:23:22 INFO Running optimizer 1/1: LBFGSOpt
+22:23:22 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=139.2
+22:23:24 INFO Running optimizer 1/1: LBFGSOpt
+22:23:24 INFO Running optimizer 1/1: LBFGSOpt
+22:23:24 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.4
+22:23:28 INFO Running optimizer 1/1: LBFGSOpt
+22:23:28 INFO Running optimizer 1/1: LBFGSOpt
+22:23:28 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.1
+22:23:31 INFO Running optimizer 1/1: LBFGSOpt
+22:23:31 INFO Running optimizer 1/1: LBFGSOpt
+22:23:31 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.8
+22:23:34 INFO Running optimizer 1/1: LBFGSOpt
+22:23:34 INFO Running optimizer 1/1: LBFGSOpt
+22:23:34 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=133.6
+22:23:38 INFO Running optimizer 1/1: LBFGSOpt
+22:23:38 INFO Running optimizer 1/1: LBFGSOpt
+22:23:38 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=113.5
+22:23:40 INFO   init03 [OK] plan=872ms exec=16615ms steps=698 wall=18.6s (SR=100% 4/4)
+22:23:41 INFO Running optimizer 1/1: LBFGSOpt
+22:23:41 INFO Running optimizer 1/1: LBFGSOpt
+22:23:41 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=112.0
+22:23:41 INFO Running optimizer 1/1: LBFGSOpt
+22:23:41 INFO Running optimizer 1/1: LBFGSOpt
+22:23:41 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.7
+22:23:43 INFO Running optimizer 1/1: LBFGSOpt
+22:23:43 INFO Running optimizer 1/1: LBFGSOpt
+22:23:43 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.7
+22:23:47 INFO Running optimizer 1/1: LBFGSOpt
+22:23:47 INFO Running optimizer 1/1: LBFGSOpt
+22:23:47 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.3
+22:23:50 INFO Running optimizer 1/1: LBFGSOpt
+22:23:50 INFO Running optimizer 1/1: LBFGSOpt
+22:23:50 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=93.1
+22:23:54 INFO Running optimizer 1/1: LBFGSOpt
+22:23:54 INFO Running optimizer 1/1: LBFGSOpt
+22:23:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=142.6
+22:23:57 INFO Running optimizer 1/1: LBFGSOpt
+22:23:57 INFO Running optimizer 1/1: LBFGSOpt
+22:23:57 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.3
+22:23:59 INFO   init04 [OK] plan=828ms exec=16324ms steps=706 wall=18.2s (SR=100% 5/5)
+22:23:59 INFO Running optimizer 1/1: LBFGSOpt
+22:23:59 INFO Running optimizer 1/1: LBFGSOpt
+22:23:59 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=115.2
+22:23:59 INFO Running optimizer 1/1: LBFGSOpt
+22:24:00 INFO Running optimizer 1/1: LBFGSOpt
+22:24:00 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=108.6
+22:24:01 INFO Running optimizer 1/1: LBFGSOpt
+22:24:01 INFO Running optimizer 1/1: LBFGSOpt
+22:24:01 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.7
+22:24:05 INFO Running optimizer 1/1: LBFGSOpt
+22:24:05 INFO Running optimizer 1/1: LBFGSOpt
+22:24:05 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=113.6
+22:24:08 INFO Running optimizer 1/1: LBFGSOpt
+22:24:08 INFO Running optimizer 1/1: LBFGSOpt
+22:24:08 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=141.0
+22:24:12 INFO Running optimizer 1/1: LBFGSOpt
+22:24:12 INFO Running optimizer 1/1: LBFGSOpt
+22:24:12 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=148.8
+22:24:15 INFO Running optimizer 1/1: LBFGSOpt
+22:24:15 INFO Running optimizer 1/1: LBFGSOpt
+22:24:15 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.8
+22:24:17 INFO   init05 [OK] plan=934ms exec=15523ms steps=649 wall=17.6s (SR=100% 6/6)
+22:24:17 INFO Running optimizer 1/1: LBFGSOpt
+22:24:17 INFO Running optimizer 1/1: LBFGSOpt
+22:24:17 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.1
+22:24:17 INFO Running optimizer 1/1: LBFGSOpt
+22:24:17 INFO Running optimizer 1/1: LBFGSOpt
+22:24:17 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=105.3
+22:24:19 INFO Running optimizer 1/1: LBFGSOpt
+22:24:19 INFO Running optimizer 1/1: LBFGSOpt
+22:24:19 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.0
+22:24:23 INFO Running optimizer 1/1: LBFGSOpt
+22:24:23 INFO Running optimizer 1/1: LBFGSOpt
+22:24:23 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.9
+22:24:25 INFO Running optimizer 1/1: LBFGSOpt
+22:24:25 INFO Running optimizer 1/1: LBFGSOpt
+22:24:25 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.1
+22:24:29 INFO Running optimizer 1/1: LBFGSOpt
+22:24:29 INFO Running optimizer 1/1: LBFGSOpt
+22:24:29 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=154.7
+22:24:33 INFO Running optimizer 1/1: LBFGSOpt
+22:24:33 INFO Running optimizer 1/1: LBFGSOpt
+22:24:33 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=119.8
+22:24:34 INFO   init06 [OK] plan=879ms exec=15190ms steps=648 wall=17.2s (SR=100% 7/7)
+22:24:35 INFO Running optimizer 1/1: LBFGSOpt
+22:24:35 INFO Running optimizer 1/1: LBFGSOpt
+22:24:35 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=120.3
+22:24:35 INFO Running optimizer 1/1: LBFGSOpt
+22:24:35 INFO Running optimizer 1/1: LBFGSOpt
+22:24:35 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=115.3
+22:24:38 INFO Running optimizer 1/1: LBFGSOpt
+22:24:38 INFO Running optimizer 1/1: LBFGSOpt
+22:24:38 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=117.5
+22:24:42 INFO Running optimizer 1/1: LBFGSOpt
+22:24:42 INFO Running optimizer 1/1: LBFGSOpt
+22:24:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=119.1
+22:24:45 INFO Running optimizer 1/1: LBFGSOpt
+22:24:45 INFO Running optimizer 1/1: LBFGSOpt
+22:24:45 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=111.9
+22:24:49 INFO Running optimizer 1/1: LBFGSOpt
+22:24:49 INFO Running optimizer 1/1: LBFGSOpt
+22:24:49 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=148.9
+22:24:52 INFO Running optimizer 1/1: LBFGSOpt
+22:24:52 INFO Running optimizer 1/1: LBFGSOpt
+22:24:52 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.4
+22:24:54 INFO   init07 [OK] plan=930ms exec=16878ms steps=694 wall=19.0s (SR=100% 8/8)
+22:24:54 INFO Running optimizer 1/1: LBFGSOpt
+22:24:54 INFO Running optimizer 1/1: LBFGSOpt
+22:24:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=157.9
+22:24:54 INFO Running optimizer 1/1: LBFGSOpt
+22:24:54 INFO Running optimizer 1/1: LBFGSOpt
+22:24:54 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=98.9
+22:24:56 INFO Running optimizer 1/1: LBFGSOpt
+22:24:56 INFO Running optimizer 1/1: LBFGSOpt
+22:24:56 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.0
+22:25:00 INFO Running optimizer 1/1: LBFGSOpt
+22:25:00 INFO Running optimizer 1/1: LBFGSOpt
+22:25:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.0
+22:25:03 INFO Running optimizer 1/1: LBFGSOpt
+22:25:03 INFO Running optimizer 1/1: LBFGSOpt
+22:25:03 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=109.2
+22:25:06 INFO Running optimizer 1/1: LBFGSOpt
+22:25:06 INFO Running optimizer 1/1: LBFGSOpt
+22:25:06 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=146.7
+22:25:10 INFO Running optimizer 1/1: LBFGSOpt
+22:25:10 INFO Running optimizer 1/1: LBFGSOpt
+22:25:10 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.8
+22:25:11 INFO   init08 [OK] plan=903ms exec=15466ms steps=671 wall=17.5s (SR=100% 9/9)
+22:25:12 INFO Running optimizer 1/1: LBFGSOpt
+22:25:12 INFO Running optimizer 1/1: LBFGSOpt
+22:25:12 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.3
+22:25:12 INFO Running optimizer 1/1: LBFGSOpt
+22:25:12 INFO Running optimizer 1/1: LBFGSOpt
+22:25:12 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.2
+22:25:14 INFO Running optimizer 1/1: LBFGSOpt
+22:25:14 INFO Running optimizer 1/1: LBFGSOpt
+22:25:14 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.7
+22:25:18 INFO Running optimizer 1/1: LBFGSOpt
+22:25:18 INFO Running optimizer 1/1: LBFGSOpt
+22:25:18 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.0
+22:25:21 INFO Running optimizer 1/1: LBFGSOpt
+22:25:21 INFO Running optimizer 1/1: LBFGSOpt
+22:25:21 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.0
+22:25:24 INFO Running optimizer 1/1: LBFGSOpt
+22:25:24 INFO Running optimizer 1/1: LBFGSOpt
+22:25:24 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=138.6
+22:25:28 INFO Running optimizer 1/1: LBFGSOpt
+22:25:28 INFO Running optimizer 1/1: LBFGSOpt
+22:25:28 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.8
+22:25:29 INFO   init09 [OK] plan=834ms exec=15446ms steps=678 wall=17.4s (SR=100% 10/10)
+22:25:30 INFO Running optimizer 1/1: LBFGSOpt
+22:25:30 INFO Running optimizer 1/1: LBFGSOpt
+22:25:30 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=109.2
+22:25:30 INFO Running optimizer 1/1: LBFGSOpt
+22:25:30 INFO Running optimizer 1/1: LBFGSOpt
+22:25:30 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=106.0
+22:25:32 INFO Running optimizer 1/1: LBFGSOpt
+22:25:32 INFO Running optimizer 1/1: LBFGSOpt
+22:25:32 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.8
+22:25:36 INFO Running optimizer 1/1: LBFGSOpt
+22:25:36 INFO Running optimizer 1/1: LBFGSOpt
+22:25:36 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.8
+22:25:38 INFO Running optimizer 1/1: LBFGSOpt
+22:25:38 INFO Running optimizer 1/1: LBFGSOpt
+22:25:38 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.4
+22:25:42 INFO Running optimizer 1/1: LBFGSOpt
+22:25:42 INFO Running optimizer 1/1: LBFGSOpt
+22:25:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=168.3
+22:25:45 INFO Running optimizer 1/1: LBFGSOpt
+22:25:46 INFO Running optimizer 1/1: LBFGSOpt
+22:25:46 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.9
+22:25:47 INFO   init10 [OK] plan=871ms exec=15563ms steps=681 wall=17.6s (SR=100% 11/11)
+22:25:48 INFO Running optimizer 1/1: LBFGSOpt
+22:25:48 INFO Running optimizer 1/1: LBFGSOpt
+22:25:48 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.7
+22:25:48 INFO Running optimizer 1/1: LBFGSOpt
+22:25:48 INFO Running optimizer 1/1: LBFGSOpt
+22:25:48 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=150.9
+22:25:50 INFO Running optimizer 1/1: LBFGSOpt
+22:25:50 INFO Running optimizer 1/1: LBFGSOpt
+22:25:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.9
+22:25:54 INFO Running optimizer 1/1: LBFGSOpt
+22:25:54 INFO Running optimizer 1/1: LBFGSOpt
+22:25:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.4
+22:25:56 INFO Running optimizer 1/1: LBFGSOpt
+22:25:56 INFO Running optimizer 1/1: LBFGSOpt
+22:25:56 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.2
+22:26:00 INFO Running optimizer 1/1: LBFGSOpt
+22:26:00 INFO Running optimizer 1/1: LBFGSOpt
+22:26:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=164.6
+22:26:04 INFO Running optimizer 1/1: LBFGSOpt
+22:26:04 INFO Running optimizer 1/1: LBFGSOpt
+22:26:04 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.2
+22:26:05 INFO   init11 [OK] plan=922ms exec=15640ms steps=680 wall=17.7s (SR=100% 12/12)
+22:26:06 INFO Running optimizer 1/1: LBFGSOpt
+22:26:06 INFO Running optimizer 1/1: LBFGSOpt
+22:26:06 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.4
+22:26:06 INFO Running optimizer 1/1: LBFGSOpt
+22:26:06 INFO Running optimizer 1/1: LBFGSOpt
+22:26:06 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=103.8
+22:26:08 INFO Running optimizer 1/1: LBFGSOpt
+22:26:08 INFO Running optimizer 1/1: LBFGSOpt
+22:26:08 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.5
+22:26:12 INFO Running optimizer 1/1: LBFGSOpt
+22:26:12 INFO Running optimizer 1/1: LBFGSOpt
+22:26:12 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.1
+22:26:14 INFO Running optimizer 1/1: LBFGSOpt
+22:26:14 INFO Running optimizer 1/1: LBFGSOpt
+22:26:14 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.9
+22:26:18 INFO Running optimizer 1/1: LBFGSOpt
+22:26:18 INFO Running optimizer 1/1: LBFGSOpt
+22:26:18 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=136.6
+22:26:21 INFO Running optimizer 1/1: LBFGSOpt
+22:26:21 INFO Running optimizer 1/1: LBFGSOpt
+22:26:21 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.5
+22:26:23 INFO   init12 [OK] plan=850ms exec=15547ms steps=677 wall=17.5s (SR=100% 13/13)
+22:26:23 INFO Running optimizer 1/1: LBFGSOpt
+22:26:23 INFO Running optimizer 1/1: LBFGSOpt
+22:26:23 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=130.5
+22:26:24 INFO Running optimizer 1/1: LBFGSOpt
+22:26:24 INFO Running optimizer 1/1: LBFGSOpt
+22:26:24 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=121.4
+22:26:26 INFO Running optimizer 1/1: LBFGSOpt
+22:26:26 INFO Running optimizer 1/1: LBFGSOpt
+22:26:26 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.8
+22:26:30 INFO Running optimizer 1/1: LBFGSOpt
+22:26:30 INFO Running optimizer 1/1: LBFGSOpt
+22:26:30 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.6
+22:26:32 INFO Running optimizer 1/1: LBFGSOpt
+22:26:33 INFO Running optimizer 1/1: LBFGSOpt
+22:26:33 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.4
+22:26:36 INFO Running optimizer 1/1: LBFGSOpt
+22:26:36 INFO Running optimizer 1/1: LBFGSOpt
+22:26:36 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=157.4
+22:26:40 INFO Running optimizer 1/1: LBFGSOpt
+22:26:40 INFO Running optimizer 1/1: LBFGSOpt
+22:26:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=117.9
+22:26:42 INFO   init13 [OK] plan=938ms exec=16669ms steps=690 wall=18.8s (SR=100% 14/14)
+22:26:43 INFO Running optimizer 1/1: LBFGSOpt
+22:26:43 INFO Running optimizer 1/1: LBFGSOpt
+22:26:43 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=119.7
+22:26:43 INFO Running optimizer 1/1: LBFGSOpt
+22:26:43 INFO Running optimizer 1/1: LBFGSOpt
+22:26:43 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=114.8
+22:26:45 INFO Running optimizer 1/1: LBFGSOpt
+22:26:45 INFO Running optimizer 1/1: LBFGSOpt
+22:26:45 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=117.0
+22:26:49 INFO Running optimizer 1/1: LBFGSOpt
+22:26:49 INFO Running optimizer 1/1: LBFGSOpt
+22:26:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=116.5
+22:26:53 INFO Running optimizer 1/1: LBFGSOpt
+22:26:53 INFO Running optimizer 1/1: LBFGSOpt
+22:26:53 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=119.4
+22:26:56 INFO Running optimizer 1/1: LBFGSOpt
+22:26:56 INFO Running optimizer 1/1: LBFGSOpt
+22:26:57 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=145.4
+22:27:00 INFO Running optimizer 1/1: LBFGSOpt
+22:27:00 INFO Running optimizer 1/1: LBFGSOpt
+22:27:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=109.2
+22:27:02 INFO   init14 [OK] plan=934ms exec=17446ms steps=703 wall=19.5s (SR=100% 15/15)
+22:27:02 INFO Running optimizer 1/1: LBFGSOpt
+22:27:03 INFO Running optimizer 1/1: LBFGSOpt
+22:27:03 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=108.0
+22:27:03 INFO Running optimizer 1/1: LBFGSOpt
+22:27:03 INFO Running optimizer 1/1: LBFGSOpt
+22:27:03 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.6
+22:27:06 INFO Running optimizer 1/1: LBFGSOpt
+22:27:06 INFO Running optimizer 1/1: LBFGSOpt
+22:27:06 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.5
+22:27:09 INFO Running optimizer 1/1: LBFGSOpt
+22:27:09 INFO Running optimizer 1/1: LBFGSOpt
+22:27:09 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.0
+22:27:11 INFO Running optimizer 1/1: LBFGSOpt
+22:27:11 INFO Running optimizer 1/1: LBFGSOpt
+22:27:11 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.7
+22:27:15 INFO Running optimizer 1/1: LBFGSOpt
+22:27:15 INFO Running optimizer 1/1: LBFGSOpt
+22:27:15 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=133.6
+22:27:18 INFO Running optimizer 1/1: LBFGSOpt
+22:27:18 INFO Running optimizer 1/1: LBFGSOpt
+22:27:18 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.9
+22:27:20 INFO   init15 [OK] plan=837ms exec=15526ms steps=682 wall=17.4s (SR=100% 16/16)
+22:27:20 INFO Running optimizer 1/1: LBFGSOpt
+22:27:20 INFO Running optimizer 1/1: LBFGSOpt
+22:27:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=112.4
+22:27:21 INFO Running optimizer 1/1: LBFGSOpt
+22:27:21 INFO Running optimizer 1/1: LBFGSOpt
+22:27:21 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.9
+22:27:23 INFO Running optimizer 1/1: LBFGSOpt
+22:27:23 INFO Running optimizer 1/1: LBFGSOpt
+22:27:23 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.8
+22:27:26 INFO Running optimizer 1/1: LBFGSOpt
+22:27:26 INFO Running optimizer 1/1: LBFGSOpt
+22:27:26 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.1
+22:27:29 INFO Running optimizer 1/1: LBFGSOpt
+22:27:29 INFO Running optimizer 1/1: LBFGSOpt
+22:27:29 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=104.3
+22:27:33 INFO Running optimizer 1/1: LBFGSOpt
+22:27:33 INFO Running optimizer 1/1: LBFGSOpt
+22:27:33 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=123.4
+22:27:36 INFO Running optimizer 1/1: LBFGSOpt
+22:27:36 INFO Running optimizer 1/1: LBFGSOpt
+22:27:36 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.0
+22:27:38 INFO   init16 [OK] plan=846ms exec=15736ms steps=689 wall=17.6s (SR=100% 17/17)
+22:27:38 INFO Running optimizer 1/1: LBFGSOpt
+22:27:38 INFO Running optimizer 1/1: LBFGSOpt
+22:27:38 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.6
+22:27:39 INFO Running optimizer 1/1: LBFGSOpt
+22:27:39 INFO Running optimizer 1/1: LBFGSOpt
+22:27:39 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=141.6
+22:27:40 INFO Running optimizer 1/1: LBFGSOpt
+22:27:40 INFO Running optimizer 1/1: LBFGSOpt
+22:27:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.3
+22:27:44 INFO Running optimizer 1/1: LBFGSOpt
+22:27:44 INFO Running optimizer 1/1: LBFGSOpt
+22:27:44 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.3
+22:27:47 INFO Running optimizer 1/1: LBFGSOpt
+22:27:47 INFO Running optimizer 1/1: LBFGSOpt
+22:27:47 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=104.3
+22:27:50 INFO Running optimizer 1/1: LBFGSOpt
+22:27:50 INFO Running optimizer 1/1: LBFGSOpt
+22:27:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=143.8
+22:27:54 INFO Running optimizer 1/1: LBFGSOpt
+22:27:54 INFO Running optimizer 1/1: LBFGSOpt
+22:27:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.1
+22:27:55 INFO   init17 [OK] plan=882ms exec=14927ms steps=647 wall=16.9s (SR=100% 18/18)
+22:27:56 INFO Running optimizer 1/1: LBFGSOpt
+22:27:56 INFO Running optimizer 1/1: LBFGSOpt
+22:27:56 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.3
+22:27:56 INFO Running optimizer 1/1: LBFGSOpt
+22:27:56 INFO Running optimizer 1/1: LBFGSOpt
+22:27:56 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.3
+22:27:58 INFO Running optimizer 1/1: LBFGSOpt
+22:27:58 INFO Running optimizer 1/1: LBFGSOpt
+22:27:58 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.1
+22:28:02 INFO Running optimizer 1/1: LBFGSOpt
+22:28:02 INFO Running optimizer 1/1: LBFGSOpt
+22:28:02 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.0
+22:28:05 INFO Running optimizer 1/1: LBFGSOpt
+22:28:05 INFO Running optimizer 1/1: LBFGSOpt
+22:28:05 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.7
+22:28:08 INFO Running optimizer 1/1: LBFGSOpt
+22:28:08 INFO Running optimizer 1/1: LBFGSOpt
+22:28:08 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=147.9
+22:28:12 INFO Running optimizer 1/1: LBFGSOpt
+22:28:12 INFO Running optimizer 1/1: LBFGSOpt
+22:28:12 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.8
+22:28:13 INFO   init18 [OK] plan=850ms exec=16016ms steps=682 wall=18.0s (SR=100% 19/19)
+22:28:14 INFO Running optimizer 1/1: LBFGSOpt
+22:28:14 INFO Running optimizer 1/1: LBFGSOpt
+22:28:14 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=109.4
+22:28:14 INFO Running optimizer 1/1: LBFGSOpt
+22:28:14 INFO Running optimizer 1/1: LBFGSOpt
+22:28:14 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=105.1
+22:28:16 INFO Running optimizer 1/1: LBFGSOpt
+22:28:16 INFO Running optimizer 1/1: LBFGSOpt
+22:28:16 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.2
+22:28:19 INFO Running optimizer 1/1: LBFGSOpt
+22:28:19 INFO Running optimizer 1/1: LBFGSOpt
+22:28:19 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.3
+22:28:22 INFO Running optimizer 1/1: LBFGSOpt
+22:28:22 INFO Running optimizer 1/1: LBFGSOpt
+22:28:22 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.9
+22:28:25 INFO Running optimizer 1/1: LBFGSOpt
+22:28:25 INFO Running optimizer 1/1: LBFGSOpt
+22:28:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=138.1
+22:28:29 INFO Running optimizer 1/1: LBFGSOpt
+22:28:29 INFO Running optimizer 1/1: LBFGSOpt
+22:28:29 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.7
+22:28:30 INFO   init19 [OK] plan=836ms exec=14585ms steps=643 wall=16.5s (SR=100% 20/20)
+22:28:31 INFO Running optimizer 1/1: LBFGSOpt
+22:28:31 INFO Running optimizer 1/1: LBFGSOpt
+22:28:31 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.4
+22:28:31 INFO Running optimizer 1/1: LBFGSOpt
+22:28:31 INFO Running optimizer 1/1: LBFGSOpt
+22:28:31 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=121.6
+22:28:33 INFO Running optimizer 1/1: LBFGSOpt
+22:28:33 INFO Running optimizer 1/1: LBFGSOpt
+22:28:33 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=112.6
+22:28:36 INFO Running optimizer 1/1: LBFGSOpt
+22:28:37 INFO Running optimizer 1/1: LBFGSOpt
+22:28:37 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.4
+22:28:39 INFO Running optimizer 1/1: LBFGSOpt
+22:28:39 INFO Running optimizer 1/1: LBFGSOpt
+22:28:39 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.1
+22:28:42 INFO Running optimizer 1/1: LBFGSOpt
+22:28:42 INFO Running optimizer 1/1: LBFGSOpt
+22:28:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=148.6
+22:28:46 INFO Running optimizer 1/1: LBFGSOpt
+22:28:46 INFO Running optimizer 1/1: LBFGSOpt
+22:28:46 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.0
+22:28:47 INFO   init20 [OK] plan=864ms exec=14848ms steps=653 wall=16.8s (SR=100% 21/21)
+22:28:48 INFO Running optimizer 1/1: LBFGSOpt
+22:28:48 INFO Running optimizer 1/1: LBFGSOpt
+22:28:48 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.4
+22:28:48 INFO Running optimizer 1/1: LBFGSOpt
+22:28:48 INFO Running optimizer 1/1: LBFGSOpt
+22:28:48 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.5
+22:28:50 INFO Running optimizer 1/1: LBFGSOpt
+22:28:50 INFO Running optimizer 1/1: LBFGSOpt
+22:28:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.2
+22:28:54 INFO Running optimizer 1/1: LBFGSOpt
+22:28:54 INFO Running optimizer 1/1: LBFGSOpt
+22:28:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.8
+22:28:57 INFO Running optimizer 1/1: LBFGSOpt
+22:28:57 INFO Running optimizer 1/1: LBFGSOpt
+22:28:57 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.0
+22:29:00 INFO Running optimizer 1/1: LBFGSOpt
+22:29:00 INFO Running optimizer 1/1: LBFGSOpt
+22:29:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=148.8
+22:29:04 INFO Running optimizer 1/1: LBFGSOpt
+22:29:04 INFO Running optimizer 1/1: LBFGSOpt
+22:29:04 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.5
+22:29:06 INFO   init21 [OK] plan=839ms exec=15992ms steps=694 wall=17.9s (SR=100% 22/22)
+22:29:06 INFO Running optimizer 1/1: LBFGSOpt
+22:29:06 INFO Running optimizer 1/1: LBFGSOpt
+22:29:06 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=132.7
+22:29:06 INFO Running optimizer 1/1: LBFGSOpt
+22:29:06 INFO Running optimizer 1/1: LBFGSOpt
+22:29:06 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.3
+22:29:09 INFO Running optimizer 1/1: LBFGSOpt
+22:29:09 INFO Running optimizer 1/1: LBFGSOpt
+22:29:09 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.4
+22:29:13 INFO Running optimizer 1/1: LBFGSOpt
+22:29:13 INFO Running optimizer 1/1: LBFGSOpt
+22:29:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.4
+22:29:15 INFO Running optimizer 1/1: LBFGSOpt
+22:29:15 INFO Running optimizer 1/1: LBFGSOpt
+22:29:15 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.7
+22:29:19 INFO Running optimizer 1/1: LBFGSOpt
+22:29:19 INFO Running optimizer 1/1: LBFGSOpt
+22:29:19 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=141.1
+22:29:22 INFO Running optimizer 1/1: LBFGSOpt
+22:29:23 INFO Running optimizer 1/1: LBFGSOpt
+22:29:23 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.5
+22:29:24 INFO   init22 [OK] plan=880ms exec=16090ms steps=694 wall=18.0s (SR=100% 23/23)
+22:29:25 INFO Running optimizer 1/1: LBFGSOpt
+22:29:25 INFO Running optimizer 1/1: LBFGSOpt
+22:29:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.8
+22:29:25 INFO Running optimizer 1/1: LBFGSOpt
+22:29:25 INFO Running optimizer 1/1: LBFGSOpt
+22:29:25 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=105.8
+22:29:27 INFO Running optimizer 1/1: LBFGSOpt
+22:29:27 INFO Running optimizer 1/1: LBFGSOpt
+22:29:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.4
+22:29:30 INFO Running optimizer 1/1: LBFGSOpt
+22:29:30 INFO Running optimizer 1/1: LBFGSOpt
+22:29:30 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.5
+22:29:33 INFO Running optimizer 1/1: LBFGSOpt
+22:29:33 INFO Running optimizer 1/1: LBFGSOpt
+22:29:33 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.9
+22:29:36 INFO Running optimizer 1/1: LBFGSOpt
+22:29:36 INFO Running optimizer 1/1: LBFGSOpt
+22:29:36 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=146.3
+22:29:40 INFO Running optimizer 1/1: LBFGSOpt
+22:29:40 INFO Running optimizer 1/1: LBFGSOpt
+22:29:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=116.4
+22:29:41 INFO   init23 [OK] plan=866ms exec=14901ms steps=650 wall=16.9s (SR=100% 24/24)
+22:29:42 INFO Running optimizer 1/1: LBFGSOpt
+22:29:42 INFO Running optimizer 1/1: LBFGSOpt
+22:29:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=149.4
+22:29:42 INFO Running optimizer 1/1: LBFGSOpt
+22:29:42 INFO Running optimizer 1/1: LBFGSOpt
+22:29:42 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.9
+22:29:44 INFO Running optimizer 1/1: LBFGSOpt
+22:29:44 INFO Running optimizer 1/1: LBFGSOpt
+22:29:44 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.2
+22:29:47 INFO Running optimizer 1/1: LBFGSOpt
+22:29:47 INFO Running optimizer 1/1: LBFGSOpt
+22:29:48 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.6
+22:29:50 INFO Running optimizer 1/1: LBFGSOpt
+22:29:50 INFO Running optimizer 1/1: LBFGSOpt
+22:29:50 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=98.8
+22:29:53 INFO Running optimizer 1/1: LBFGSOpt
+22:29:53 INFO Running optimizer 1/1: LBFGSOpt
+22:29:53 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=144.2
+22:29:57 INFO Running optimizer 1/1: LBFGSOpt
+22:29:57 INFO Running optimizer 1/1: LBFGSOpt
+22:29:57 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=108.7
+22:29:58 INFO   init24 [OK] plan=890ms exec=14780ms steps=648 wall=16.8s (SR=100% 25/25)
+22:29:59 INFO Running optimizer 1/1: LBFGSOpt
+22:29:59 INFO Running optimizer 1/1: LBFGSOpt
+22:29:59 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.8
+22:29:59 INFO Running optimizer 1/1: LBFGSOpt
+22:29:59 INFO Running optimizer 1/1: LBFGSOpt
+22:29:59 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=95.8
+22:30:01 INFO Running optimizer 1/1: LBFGSOpt
+22:30:01 INFO Running optimizer 1/1: LBFGSOpt
+22:30:01 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.9
+22:30:05 INFO Running optimizer 1/1: LBFGSOpt
+22:30:05 INFO Running optimizer 1/1: LBFGSOpt
+22:30:05 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.3
+22:30:07 INFO Running optimizer 1/1: LBFGSOpt
+22:30:07 INFO Running optimizer 1/1: LBFGSOpt
+22:30:07 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=117.4
+22:30:11 INFO Running optimizer 1/1: LBFGSOpt
+22:30:11 INFO Running optimizer 1/1: LBFGSOpt
+22:30:11 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=137.0
+22:30:14 INFO Running optimizer 1/1: LBFGSOpt
+22:30:14 INFO Running optimizer 1/1: LBFGSOpt
+22:30:14 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.9
+22:30:16 INFO   init25 [OK] plan=829ms exec=14804ms steps=654 wall=16.8s (SR=100% 26/26)
+22:30:16 INFO Running optimizer 1/1: LBFGSOpt
+22:30:16 INFO Running optimizer 1/1: LBFGSOpt
+22:30:16 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.8
+22:30:16 INFO Running optimizer 1/1: LBFGSOpt
+22:30:16 INFO Running optimizer 1/1: LBFGSOpt
+22:30:16 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=109.4
+22:30:19 INFO Running optimizer 1/1: LBFGSOpt
+22:30:19 INFO Running optimizer 1/1: LBFGSOpt
+22:30:19 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.6
+22:30:22 INFO Running optimizer 1/1: LBFGSOpt
+22:30:22 INFO Running optimizer 1/1: LBFGSOpt
+22:30:22 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.0
+22:30:24 INFO Running optimizer 1/1: LBFGSOpt
+22:30:24 INFO Running optimizer 1/1: LBFGSOpt
+22:30:25 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.9
+22:30:28 INFO Running optimizer 1/1: LBFGSOpt
+22:30:28 INFO Running optimizer 1/1: LBFGSOpt
+22:30:28 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=138.6
+22:30:32 INFO Running optimizer 1/1: LBFGSOpt
+22:30:32 INFO Running optimizer 1/1: LBFGSOpt
+22:30:32 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.0
+22:30:34 INFO   init26 [OK] plan=844ms exec=15721ms steps=683 wall=17.6s (SR=100% 27/27)
+22:30:34 INFO Running optimizer 1/1: LBFGSOpt
+22:30:34 INFO Running optimizer 1/1: LBFGSOpt
+22:30:34 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.8
+22:30:34 INFO Running optimizer 1/1: LBFGSOpt
+22:30:34 INFO Running optimizer 1/1: LBFGSOpt
+22:30:34 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.4
+22:30:36 INFO Running optimizer 1/1: LBFGSOpt
+22:30:36 INFO Running optimizer 1/1: LBFGSOpt
+22:30:36 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=123.0
+22:30:40 INFO Running optimizer 1/1: LBFGSOpt
+22:30:40 INFO Running optimizer 1/1: LBFGSOpt
+22:30:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=116.3
+22:30:43 INFO Running optimizer 1/1: LBFGSOpt
+22:30:43 INFO Running optimizer 1/1: LBFGSOpt
+22:30:43 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=122.5
+22:30:46 INFO Running optimizer 1/1: LBFGSOpt
+22:30:46 INFO Running optimizer 1/1: LBFGSOpt
+22:30:46 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=176.6
+22:30:50 INFO Running optimizer 1/1: LBFGSOpt
+22:30:50 INFO Running optimizer 1/1: LBFGSOpt
+22:30:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.0
+22:30:51 INFO   init27 [OK] plan=926ms exec=15446ms steps=652 wall=17.5s (SR=100% 28/28)
+22:30:52 INFO Running optimizer 1/1: LBFGSOpt
+22:30:52 INFO Running optimizer 1/1: LBFGSOpt
+22:30:52 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.0
+22:30:52 INFO Running optimizer 1/1: LBFGSOpt
+22:30:52 INFO Running optimizer 1/1: LBFGSOpt
+22:30:52 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=106.6
+22:30:55 INFO Running optimizer 1/1: LBFGSOpt
+22:30:55 INFO Running optimizer 1/1: LBFGSOpt
+22:30:55 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.1
+22:30:58 INFO Running optimizer 1/1: LBFGSOpt
+22:30:58 INFO Running optimizer 1/1: LBFGSOpt
+22:30:59 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.2
+22:31:01 INFO Running optimizer 1/1: LBFGSOpt
+22:31:01 INFO Running optimizer 1/1: LBFGSOpt
+22:31:01 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.9
+22:31:05 INFO Running optimizer 1/1: LBFGSOpt
+22:31:05 INFO Running optimizer 1/1: LBFGSOpt
+22:31:05 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=144.6
+22:31:09 INFO Running optimizer 1/1: LBFGSOpt
+22:31:09 INFO Running optimizer 1/1: LBFGSOpt
+22:31:09 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=143.0
+22:31:11 INFO   init28 [OK] plan=895ms exec=16948ms steps=724 wall=19.0s (SR=100% 29/29)
+22:31:11 INFO Running optimizer 1/1: LBFGSOpt
+22:31:11 INFO Running optimizer 1/1: LBFGSOpt
+22:31:11 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.8
+22:31:11 INFO Running optimizer 1/1: LBFGSOpt
+22:31:11 INFO Running optimizer 1/1: LBFGSOpt
+22:31:11 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=98.9
+22:31:14 INFO Running optimizer 1/1: LBFGSOpt
+22:31:14 INFO Running optimizer 1/1: LBFGSOpt
+22:31:14 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=108.5
+22:31:17 INFO Running optimizer 1/1: LBFGSOpt
+22:31:17 INFO Running optimizer 1/1: LBFGSOpt
+22:31:17 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.0
+22:31:20 INFO Running optimizer 1/1: LBFGSOpt
+22:31:20 INFO Running optimizer 1/1: LBFGSOpt
+22:31:20 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.9
+22:31:23 INFO Running optimizer 1/1: LBFGSOpt
+22:31:23 INFO Running optimizer 1/1: LBFGSOpt
+22:31:24 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=148.3
+22:31:27 INFO Running optimizer 1/1: LBFGSOpt
+22:31:27 INFO Running optimizer 1/1: LBFGSOpt
+22:31:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.8
+22:31:29 INFO   init29 [OK] plan=854ms exec=15758ms steps=673 wall=17.7s (SR=100% 30/30)
+22:31:29 INFO Running optimizer 1/1: LBFGSOpt
+22:31:29 INFO Running optimizer 1/1: LBFGSOpt
+22:31:29 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.1
+22:31:29 INFO Running optimizer 1/1: LBFGSOpt
+22:31:29 INFO Running optimizer 1/1: LBFGSOpt
+22:31:29 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=108.1
+22:31:32 INFO Running optimizer 1/1: LBFGSOpt
+22:31:32 INFO Running optimizer 1/1: LBFGSOpt
+22:31:32 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=117.6
+22:31:35 INFO Running optimizer 1/1: LBFGSOpt
+22:31:36 INFO Running optimizer 1/1: LBFGSOpt
+22:31:36 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=140.4
+22:31:38 INFO Running optimizer 1/1: LBFGSOpt
+22:31:38 INFO Running optimizer 1/1: LBFGSOpt
+22:31:38 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=95.1
+22:31:42 INFO Running optimizer 1/1: LBFGSOpt
+22:31:42 INFO Running optimizer 1/1: LBFGSOpt
+22:31:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=133.0
+22:31:45 INFO Running optimizer 1/1: LBFGSOpt
+22:31:45 INFO Running optimizer 1/1: LBFGSOpt
+22:31:45 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.4
+22:31:47 INFO   init30 [OK] plan=893ms exec=15751ms steps=691 wall=17.8s (SR=100% 31/31)
+22:31:47 INFO Running optimizer 1/1: LBFGSOpt
+22:31:47 INFO Running optimizer 1/1: LBFGSOpt
+22:31:47 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.7
+22:31:48 INFO Running optimizer 1/1: LBFGSOpt
+22:31:48 INFO Running optimizer 1/1: LBFGSOpt
+22:31:48 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.5
+22:31:50 INFO Running optimizer 1/1: LBFGSOpt
+22:31:50 INFO Running optimizer 1/1: LBFGSOpt
+22:31:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.7
+22:31:54 INFO Running optimizer 1/1: LBFGSOpt
+22:31:54 INFO Running optimizer 1/1: LBFGSOpt
+22:31:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.7
+22:31:57 INFO Running optimizer 1/1: LBFGSOpt
+22:31:57 INFO Running optimizer 1/1: LBFGSOpt
+22:31:57 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=94.1
+22:32:01 INFO Running optimizer 1/1: LBFGSOpt
+22:32:01 INFO Running optimizer 1/1: LBFGSOpt
+22:32:01 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=141.5
+22:32:04 INFO Running optimizer 1/1: LBFGSOpt
+22:32:04 INFO Running optimizer 1/1: LBFGSOpt
+22:32:04 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.3
+22:32:06 INFO   init31 [OK] plan=819ms exec=16785ms steps=720 wall=18.7s (SR=100% 32/32)
+22:32:06 INFO Running optimizer 1/1: LBFGSOpt
+22:32:06 INFO Running optimizer 1/1: LBFGSOpt
+22:32:07 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.9
+22:32:07 INFO Running optimizer 1/1: LBFGSOpt
+22:32:07 INFO Running optimizer 1/1: LBFGSOpt
+22:32:07 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=105.1
+22:32:09 INFO Running optimizer 1/1: LBFGSOpt
+22:32:09 INFO Running optimizer 1/1: LBFGSOpt
+22:32:09 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.0
+22:32:13 INFO Running optimizer 1/1: LBFGSOpt
+22:32:13 INFO Running optimizer 1/1: LBFGSOpt
+22:32:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.7
+22:32:16 INFO Running optimizer 1/1: LBFGSOpt
+22:32:16 INFO Running optimizer 1/1: LBFGSOpt
+22:32:16 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.2
+22:32:20 INFO Running optimizer 1/1: LBFGSOpt
+22:32:20 INFO Running optimizer 1/1: LBFGSOpt
+22:32:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=143.2
+22:32:23 INFO Running optimizer 1/1: LBFGSOpt
+22:32:23 INFO Running optimizer 1/1: LBFGSOpt
+22:32:23 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.3
+22:32:25 INFO   init32 [OK] plan=881ms exec=16369ms steps=702 wall=18.4s (SR=100% 33/33)
+22:32:25 INFO Running optimizer 1/1: LBFGSOpt
+22:32:25 INFO Running optimizer 1/1: LBFGSOpt
+22:32:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.8
+22:32:25 INFO Running optimizer 1/1: LBFGSOpt
+22:32:25 INFO Running optimizer 1/1: LBFGSOpt
+22:32:25 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.5
+22:32:27 INFO Running optimizer 1/1: LBFGSOpt
+22:32:27 INFO Running optimizer 1/1: LBFGSOpt
+22:32:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.9
+22:32:31 INFO Running optimizer 1/1: LBFGSOpt
+22:32:31 INFO Running optimizer 1/1: LBFGSOpt
+22:32:31 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.9
+22:32:34 INFO Running optimizer 1/1: LBFGSOpt
+22:32:34 INFO Running optimizer 1/1: LBFGSOpt
+22:32:34 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.6
+22:32:37 INFO Running optimizer 1/1: LBFGSOpt
+22:32:37 INFO Running optimizer 1/1: LBFGSOpt
+22:32:37 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=147.5
+22:32:41 INFO Running optimizer 1/1: LBFGSOpt
+22:32:41 INFO Running optimizer 1/1: LBFGSOpt
+22:32:41 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=144.5
+22:32:43 INFO   init33 [OK] plan=879ms exec=15752ms steps=671 wall=17.8s (SR=100% 34/34)
+22:32:43 INFO Running optimizer 1/1: LBFGSOpt
+22:32:43 INFO Running optimizer 1/1: LBFGSOpt
+22:32:43 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.2
+22:32:44 INFO Running optimizer 1/1: LBFGSOpt
+22:32:44 INFO Running optimizer 1/1: LBFGSOpt
+22:32:44 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=104.9
+22:32:46 INFO Running optimizer 1/1: LBFGSOpt
+22:32:46 INFO Running optimizer 1/1: LBFGSOpt
+22:32:46 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.1
+22:32:49 INFO Running optimizer 1/1: LBFGSOpt
+22:32:49 INFO Running optimizer 1/1: LBFGSOpt
+22:32:49 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.6
+22:32:52 INFO Running optimizer 1/1: LBFGSOpt
+22:32:52 INFO Running optimizer 1/1: LBFGSOpt
+22:32:52 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=104.7
+22:32:55 INFO Running optimizer 1/1: LBFGSOpt
+22:32:55 INFO Running optimizer 1/1: LBFGSOpt
+22:32:56 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=139.5
+22:32:59 INFO Running optimizer 1/1: LBFGSOpt
+22:32:59 INFO Running optimizer 1/1: LBFGSOpt
+22:32:59 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.9
+22:33:01 INFO   init34 [OK] plan=852ms exec=15569ms steps=675 wall=17.5s (SR=100% 35/35)
+22:33:01 INFO Running optimizer 1/1: LBFGSOpt
+22:33:01 INFO Running optimizer 1/1: LBFGSOpt
+22:33:01 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.9
+22:33:01 INFO Running optimizer 1/1: LBFGSOpt
+22:33:01 INFO Running optimizer 1/1: LBFGSOpt
+22:33:01 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.2
+22:33:03 INFO Running optimizer 1/1: LBFGSOpt
+22:33:03 INFO Running optimizer 1/1: LBFGSOpt
+22:33:03 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.6
+22:33:07 INFO Running optimizer 1/1: LBFGSOpt
+22:33:07 INFO Running optimizer 1/1: LBFGSOpt
+22:33:07 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.9
+22:33:09 INFO Running optimizer 1/1: LBFGSOpt
+22:33:10 INFO Running optimizer 1/1: LBFGSOpt
+22:33:10 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.2
+22:33:13 INFO Running optimizer 1/1: LBFGSOpt
+22:33:13 INFO Running optimizer 1/1: LBFGSOpt
+22:33:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=140.7
+22:33:17 INFO Running optimizer 1/1: LBFGSOpt
+22:33:17 INFO Running optimizer 1/1: LBFGSOpt
+22:33:17 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.3
+22:33:18 INFO   init35 [OK] plan=837ms exec=15219ms steps=666 wall=17.1s (SR=100% 36/36)
+22:33:19 INFO Running optimizer 1/1: LBFGSOpt
+22:33:19 INFO Running optimizer 1/1: LBFGSOpt
+22:33:19 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.5
+22:33:19 INFO Running optimizer 1/1: LBFGSOpt
+22:33:19 INFO Running optimizer 1/1: LBFGSOpt
+22:33:19 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=105.4
+22:33:21 INFO Running optimizer 1/1: LBFGSOpt
+22:33:21 INFO Running optimizer 1/1: LBFGSOpt
+22:33:21 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.8
+22:33:25 INFO Running optimizer 1/1: LBFGSOpt
+22:33:25 INFO Running optimizer 1/1: LBFGSOpt
+22:33:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.5
+22:33:27 INFO Running optimizer 1/1: LBFGSOpt
+22:33:27 INFO Running optimizer 1/1: LBFGSOpt
+22:33:27 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=104.3
+22:33:31 INFO Running optimizer 1/1: LBFGSOpt
+22:33:31 INFO Running optimizer 1/1: LBFGSOpt
+22:33:31 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=143.4
+22:33:34 INFO Running optimizer 1/1: LBFGSOpt
+22:33:34 INFO Running optimizer 1/1: LBFGSOpt
+22:33:34 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.6
+22:33:36 INFO   init36 [OK] plan=843ms exec=15390ms steps=660 wall=17.3s (SR=100% 37/37)
+22:33:36 INFO Running optimizer 1/1: LBFGSOpt
+22:33:36 INFO Running optimizer 1/1: LBFGSOpt
+22:33:36 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=113.3
+22:33:37 INFO Running optimizer 1/1: LBFGSOpt
+22:33:37 INFO Running optimizer 1/1: LBFGSOpt
+22:33:37 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=115.4
+22:33:39 INFO Running optimizer 1/1: LBFGSOpt
+22:33:39 INFO Running optimizer 1/1: LBFGSOpt
+22:33:39 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.9
+22:33:43 INFO Running optimizer 1/1: LBFGSOpt
+22:33:43 INFO Running optimizer 1/1: LBFGSOpt
+22:33:43 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.0
+22:33:45 INFO Running optimizer 1/1: LBFGSOpt
+22:33:45 INFO Running optimizer 1/1: LBFGSOpt
+22:33:45 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.3
+22:33:49 INFO Running optimizer 1/1: LBFGSOpt
+22:33:49 INFO Running optimizer 1/1: LBFGSOpt
+22:33:49 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=136.2
+22:33:52 INFO Running optimizer 1/1: LBFGSOpt
+22:33:52 INFO Running optimizer 1/1: LBFGSOpt
+22:33:52 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.8
+22:33:54 INFO   init37 [OK] plan=865ms exec=15444ms steps=676 wall=17.4s (SR=100% 38/38)
+22:33:54 INFO Running optimizer 1/1: LBFGSOpt
+22:33:54 INFO Running optimizer 1/1: LBFGSOpt
+22:33:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=114.4
+22:33:54 INFO Running optimizer 1/1: LBFGSOpt
+22:33:54 INFO Running optimizer 1/1: LBFGSOpt
+22:33:54 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=104.7
+22:33:57 INFO Running optimizer 1/1: LBFGSOpt
+22:33:57 INFO Running optimizer 1/1: LBFGSOpt
+22:33:57 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=138.8
+22:34:00 INFO Running optimizer 1/1: LBFGSOpt
+22:34:00 INFO Running optimizer 1/1: LBFGSOpt
+22:34:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.8
+22:34:03 INFO Running optimizer 1/1: LBFGSOpt
+22:34:03 INFO Running optimizer 1/1: LBFGSOpt
+22:34:03 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.1
+22:34:06 INFO Running optimizer 1/1: LBFGSOpt
+22:34:06 INFO Running optimizer 1/1: LBFGSOpt
+22:34:06 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=167.8
+22:34:10 INFO Running optimizer 1/1: LBFGSOpt
+22:34:10 INFO Running optimizer 1/1: LBFGSOpt
+22:34:10 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.4
+22:34:12 INFO   init38 [OK] plan=913ms exec=15461ms steps=677 wall=17.5s (SR=100% 39/39)
+22:34:12 INFO Running optimizer 1/1: LBFGSOpt
+22:34:12 INFO Running optimizer 1/1: LBFGSOpt
+22:34:12 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=113.8
+22:34:12 INFO Running optimizer 1/1: LBFGSOpt
+22:34:12 INFO Running optimizer 1/1: LBFGSOpt
+22:34:12 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=112.7
+22:34:15 INFO Running optimizer 1/1: LBFGSOpt
+22:34:15 INFO Running optimizer 1/1: LBFGSOpt
+22:34:15 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.3
+22:34:19 INFO Running optimizer 1/1: LBFGSOpt
+22:34:19 INFO Running optimizer 1/1: LBFGSOpt
+22:34:19 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.6
+22:34:21 INFO Running optimizer 1/1: LBFGSOpt
+22:34:21 INFO Running optimizer 1/1: LBFGSOpt
+22:34:21 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=104.7
+22:34:25 INFO Running optimizer 1/1: LBFGSOpt
+22:34:25 INFO Running optimizer 1/1: LBFGSOpt
+22:34:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=140.9
+22:34:29 INFO Running optimizer 1/1: LBFGSOpt
+22:34:29 INFO Running optimizer 1/1: LBFGSOpt
+22:34:29 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.3
+22:34:30 INFO   init39 [OK] plan=864ms exec=16228ms steps=694 wall=18.2s (SR=100% 40/40)
+22:34:31 INFO Running optimizer 1/1: LBFGSOpt
+22:34:31 INFO Running optimizer 1/1: LBFGSOpt
+22:34:31 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.6
+22:34:31 INFO Running optimizer 1/1: LBFGSOpt
+22:34:31 INFO Running optimizer 1/1: LBFGSOpt
+22:34:31 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=118.5
+22:34:33 INFO Running optimizer 1/1: LBFGSOpt
+22:34:33 INFO Running optimizer 1/1: LBFGSOpt
+22:34:33 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.4
+22:34:37 INFO Running optimizer 1/1: LBFGSOpt
+22:34:37 INFO Running optimizer 1/1: LBFGSOpt
+22:34:37 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.6
+22:34:39 INFO Running optimizer 1/1: LBFGSOpt
+22:34:39 INFO Running optimizer 1/1: LBFGSOpt
+22:34:39 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=105.0
+22:34:42 INFO Running optimizer 1/1: LBFGSOpt
+22:34:42 INFO Running optimizer 1/1: LBFGSOpt
+22:34:43 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=138.9
+22:34:46 INFO Running optimizer 1/1: LBFGSOpt
+22:34:46 INFO Running optimizer 1/1: LBFGSOpt
+22:34:46 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.1
+22:34:48 INFO   init40 [OK] plan=853ms exec=14948ms steps=650 wall=16.9s (SR=100% 41/41)
+22:34:48 INFO Running optimizer 1/1: LBFGSOpt
+22:34:48 INFO Running optimizer 1/1: LBFGSOpt
+22:34:48 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=115.3
+22:34:48 INFO Running optimizer 1/1: LBFGSOpt
+22:34:48 INFO Running optimizer 1/1: LBFGSOpt
+22:34:48 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.3
+22:34:50 INFO Running optimizer 1/1: LBFGSOpt
+22:34:51 INFO Running optimizer 1/1: LBFGSOpt
+22:34:51 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.3
+22:34:54 INFO Running optimizer 1/1: LBFGSOpt
+22:34:54 INFO Running optimizer 1/1: LBFGSOpt
+22:34:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.3
+22:34:57 INFO Running optimizer 1/1: LBFGSOpt
+22:34:57 INFO Running optimizer 1/1: LBFGSOpt
+22:34:57 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.7
+22:35:00 INFO Running optimizer 1/1: LBFGSOpt
+22:35:01 INFO Running optimizer 1/1: LBFGSOpt
+22:35:01 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=144.4
+22:35:04 INFO Running optimizer 1/1: LBFGSOpt
+22:35:04 INFO Running optimizer 1/1: LBFGSOpt
+22:35:04 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=140.2
+22:35:06 INFO   init41 [OK] plan=884ms exec=15780ms steps=686 wall=17.7s (SR=100% 42/42)
+22:35:06 INFO Running optimizer 1/1: LBFGSOpt
+22:35:06 INFO Running optimizer 1/1: LBFGSOpt
+22:35:06 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.2
+22:35:06 INFO Running optimizer 1/1: LBFGSOpt
+22:35:06 INFO Running optimizer 1/1: LBFGSOpt
+22:35:06 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=105.3
+22:35:09 INFO Running optimizer 1/1: LBFGSOpt
+22:35:09 INFO Running optimizer 1/1: LBFGSOpt
+22:35:09 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.8
+22:35:13 INFO Running optimizer 1/1: LBFGSOpt
+22:35:13 INFO Running optimizer 1/1: LBFGSOpt
+22:35:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=118.9
+22:35:15 INFO Running optimizer 1/1: LBFGSOpt
+22:35:15 INFO Running optimizer 1/1: LBFGSOpt
+22:35:15 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.2
+22:35:19 INFO Running optimizer 1/1: LBFGSOpt
+22:35:19 INFO Running optimizer 1/1: LBFGSOpt
+22:35:19 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=144.5
+22:35:22 INFO Running optimizer 1/1: LBFGSOpt
+22:35:22 INFO Running optimizer 1/1: LBFGSOpt
+22:35:22 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=120.6
+22:35:24 INFO   init42 [OK] plan=877ms exec=15954ms steps=688 wall=17.9s (SR=100% 43/43)
+22:35:24 INFO Running optimizer 1/1: LBFGSOpt
+22:35:24 INFO Running optimizer 1/1: LBFGSOpt
+22:35:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=109.2
+22:35:25 INFO Running optimizer 1/1: LBFGSOpt
+22:35:25 INFO Running optimizer 1/1: LBFGSOpt
+22:35:25 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=105.3
+22:35:27 INFO Running optimizer 1/1: LBFGSOpt
+22:35:27 INFO Running optimizer 1/1: LBFGSOpt
+22:35:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.4
+22:35:31 INFO Running optimizer 1/1: LBFGSOpt
+22:35:31 INFO Running optimizer 1/1: LBFGSOpt
+22:35:31 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.1
+22:35:34 INFO Running optimizer 1/1: LBFGSOpt
+22:35:34 INFO Running optimizer 1/1: LBFGSOpt
+22:35:34 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=106.5
+22:35:38 INFO Running optimizer 1/1: LBFGSOpt
+22:35:38 INFO Running optimizer 1/1: LBFGSOpt
+22:35:38 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=160.1
+22:35:42 INFO Running optimizer 1/1: LBFGSOpt
+22:35:42 INFO Running optimizer 1/1: LBFGSOpt
+22:35:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=113.0
+22:35:43 INFO   init43 [OK] plan=886ms exec=16945ms steps=697 wall=19.0s (SR=100% 44/44)
+22:35:44 INFO Running optimizer 1/1: LBFGSOpt
+22:35:44 INFO Running optimizer 1/1: LBFGSOpt
+22:35:44 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=112.8
+22:35:44 INFO Running optimizer 1/1: LBFGSOpt
+22:35:44 INFO Running optimizer 1/1: LBFGSOpt
+22:35:44 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=103.2
+22:35:46 INFO Running optimizer 1/1: LBFGSOpt
+22:35:46 INFO Running optimizer 1/1: LBFGSOpt
+22:35:46 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.1
+22:35:50 INFO Running optimizer 1/1: LBFGSOpt
+22:35:50 INFO Running optimizer 1/1: LBFGSOpt
+22:35:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.1
+22:35:53 INFO Running optimizer 1/1: LBFGSOpt
+22:35:53 INFO Running optimizer 1/1: LBFGSOpt
+22:35:53 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=121.0
+22:35:56 INFO Running optimizer 1/1: LBFGSOpt
+22:35:56 INFO Running optimizer 1/1: LBFGSOpt
+22:35:56 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=141.4
+22:36:00 INFO Running optimizer 1/1: LBFGSOpt
+22:36:00 INFO Running optimizer 1/1: LBFGSOpt
+22:36:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.2
+22:36:01 INFO   init44 [OK] plan=870ms exec=15568ms steps=673 wall=17.5s (SR=100% 45/45)
+22:36:02 INFO Running optimizer 1/1: LBFGSOpt
+22:36:02 INFO Running optimizer 1/1: LBFGSOpt
+22:36:02 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.5
+22:36:02 INFO Running optimizer 1/1: LBFGSOpt
+22:36:02 INFO Running optimizer 1/1: LBFGSOpt
+22:36:02 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=95.3
+22:36:04 INFO Running optimizer 1/1: LBFGSOpt
+22:36:04 INFO Running optimizer 1/1: LBFGSOpt
+22:36:04 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=142.0
+22:36:08 INFO Running optimizer 1/1: LBFGSOpt
+22:36:08 INFO Running optimizer 1/1: LBFGSOpt
+22:36:08 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.5
+22:36:11 INFO Running optimizer 1/1: LBFGSOpt
+22:36:11 INFO Running optimizer 1/1: LBFGSOpt
+22:36:11 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=98.2
+22:36:14 INFO Running optimizer 1/1: LBFGSOpt
+22:36:14 INFO Running optimizer 1/1: LBFGSOpt
+22:36:14 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=142.5
+22:36:18 INFO Running optimizer 1/1: LBFGSOpt
+22:36:18 INFO Running optimizer 1/1: LBFGSOpt
+22:36:18 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.4
+22:36:19 INFO   init45 [OK] plan=859ms exec=15768ms steps=684 wall=17.8s (SR=100% 46/46)
+22:36:20 INFO Running optimizer 1/1: LBFGSOpt
+22:36:20 INFO Running optimizer 1/1: LBFGSOpt
+22:36:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.9
+22:36:20 INFO Running optimizer 1/1: LBFGSOpt
+22:36:20 INFO Running optimizer 1/1: LBFGSOpt
+22:36:20 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=104.4
+22:36:22 INFO Running optimizer 1/1: LBFGSOpt
+22:36:22 INFO Running optimizer 1/1: LBFGSOpt
+22:36:22 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.7
+22:36:26 INFO Running optimizer 1/1: LBFGSOpt
+22:36:26 INFO Running optimizer 1/1: LBFGSOpt
+22:36:26 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.9
+22:36:28 INFO Running optimizer 1/1: LBFGSOpt
+22:36:28 INFO Running optimizer 1/1: LBFGSOpt
+22:36:28 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=129.1
+22:36:32 INFO Running optimizer 1/1: LBFGSOpt
+22:36:32 INFO Running optimizer 1/1: LBFGSOpt
+22:36:32 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=138.0
+22:36:35 INFO Running optimizer 1/1: LBFGSOpt
+22:36:35 INFO Running optimizer 1/1: LBFGSOpt
+22:36:35 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.7
+22:36:37 INFO   init46 [OK] plan=882ms exec=15293ms steps=666 wall=17.3s (SR=100% 47/47)
+22:36:37 INFO Running optimizer 1/1: LBFGSOpt
+22:36:37 INFO Running optimizer 1/1: LBFGSOpt
+22:36:37 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=121.1
+22:36:38 INFO Running optimizer 1/1: LBFGSOpt
+22:36:38 INFO Running optimizer 1/1: LBFGSOpt
+22:36:38 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=143.1
+22:36:40 INFO Running optimizer 1/1: LBFGSOpt
+22:36:40 INFO Running optimizer 1/1: LBFGSOpt
+22:36:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.3
+22:36:44 INFO Running optimizer 1/1: LBFGSOpt
+22:36:44 INFO Running optimizer 1/1: LBFGSOpt
+22:36:44 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.3
+22:36:46 INFO Running optimizer 1/1: LBFGSOpt
+22:36:46 INFO Running optimizer 1/1: LBFGSOpt
+22:36:46 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=126.6
+22:36:50 INFO Running optimizer 1/1: LBFGSOpt
+22:36:50 INFO Running optimizer 1/1: LBFGSOpt
+22:36:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=150.0
+22:36:53 INFO Running optimizer 1/1: LBFGSOpt
+22:36:53 INFO Running optimizer 1/1: LBFGSOpt
+22:36:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.4
+22:36:55 INFO   init47 [OK] plan=932ms exec=15684ms steps=683 wall=17.7s (SR=100% 48/48)
+22:36:55 INFO Running optimizer 1/1: LBFGSOpt
+22:36:55 INFO Running optimizer 1/1: LBFGSOpt
+22:36:55 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.5
+22:36:56 INFO Running optimizer 1/1: LBFGSOpt
+22:36:56 INFO Running optimizer 1/1: LBFGSOpt
+22:36:56 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=129.0
+22:36:58 INFO Running optimizer 1/1: LBFGSOpt
+22:36:58 INFO Running optimizer 1/1: LBFGSOpt
+22:36:58 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=95.0
+22:37:02 INFO Running optimizer 1/1: LBFGSOpt
+22:37:02 INFO Running optimizer 1/1: LBFGSOpt
+22:37:02 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.1
+22:37:04 INFO Running optimizer 1/1: LBFGSOpt
+22:37:04 INFO Running optimizer 1/1: LBFGSOpt
+22:37:04 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=95.4
+22:37:08 INFO Running optimizer 1/1: LBFGSOpt
+22:37:08 INFO Running optimizer 1/1: LBFGSOpt
+22:37:08 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=143.5
+22:37:11 INFO Running optimizer 1/1: LBFGSOpt
+22:37:11 INFO Running optimizer 1/1: LBFGSOpt
+22:37:11 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.7
+22:37:13 INFO   init48 [OK] plan=858ms exec=15448ms steps=681 wall=17.4s (SR=100% 49/49)
+22:37:13 INFO Running optimizer 1/1: LBFGSOpt
+22:37:13 INFO Running optimizer 1/1: LBFGSOpt
+22:37:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.7
+22:37:13 INFO Running optimizer 1/1: LBFGSOpt
+22:37:13 INFO Running optimizer 1/1: LBFGSOpt
+22:37:13 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=95.2
+22:37:16 INFO Running optimizer 1/1: LBFGSOpt
+22:37:16 INFO Running optimizer 1/1: LBFGSOpt
+22:37:16 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.6
+22:37:20 INFO Running optimizer 1/1: LBFGSOpt
+22:37:20 INFO Running optimizer 1/1: LBFGSOpt
+22:37:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.2
+22:37:23 INFO Running optimizer 1/1: LBFGSOpt
+22:37:23 INFO Running optimizer 1/1: LBFGSOpt
+22:37:23 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.7
+22:37:26 INFO Running optimizer 1/1: LBFGSOpt
+22:37:26 INFO Running optimizer 1/1: LBFGSOpt
+22:37:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=135.9
+22:37:30 INFO Running optimizer 1/1: LBFGSOpt
+22:37:30 INFO Running optimizer 1/1: LBFGSOpt
+22:37:30 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.4
+22:37:32 INFO   init49 [OK] plan=825ms exec=16529ms steps=706 wall=18.5s (SR=100% 50/50)
+22:37:32 INFO === Task: pick_up_the_bbq_sauce_and_place_it_in_the_basket ===
+22:37:34 INFO Running optimizer 1/1: LBFGSOpt
+22:37:34 INFO Running optimizer 1/1: LBFGSOpt
+22:37:34 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.5
+22:37:34 INFO Running optimizer 1/1: LBFGSOpt
+22:37:34 INFO Running optimizer 1/1: LBFGSOpt
+22:37:34 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=93.0
+22:37:37 INFO Running optimizer 1/1: LBFGSOpt
+22:37:37 INFO Running optimizer 1/1: LBFGSOpt
+22:37:37 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.2
+22:37:40 INFO Running optimizer 1/1: LBFGSOpt
+22:37:40 INFO Running optimizer 1/1: LBFGSOpt
+22:37:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=109.8
+22:37:42 INFO Running optimizer 1/1: LBFGSOpt
+22:37:42 INFO Running optimizer 1/1: LBFGSOpt
+22:37:42 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.1
+22:37:44 INFO Running optimizer 1/1: LBFGSOpt
+22:37:44 INFO Running optimizer 1/1: LBFGSOpt
+22:37:44 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=131.8
+22:37:47 INFO Running optimizer 1/1: LBFGSOpt
+22:37:47 INFO Running optimizer 1/1: LBFGSOpt
+22:37:47 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.2
+22:37:49 INFO   init00 [OK] plan=805ms exec=13152ms steps=641 wall=14.9s (SR=100% 51/51)
+22:37:49 INFO Running optimizer 1/1: LBFGSOpt
+22:37:49 INFO Running optimizer 1/1: LBFGSOpt
+22:37:49 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.9
+22:37:49 INFO Running optimizer 1/1: LBFGSOpt
+22:37:49 INFO Running optimizer 1/1: LBFGSOpt
+22:37:49 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=98.0
+22:37:53 INFO Running optimizer 1/1: LBFGSOpt
+22:37:53 INFO Running optimizer 1/1: LBFGSOpt
+22:37:53 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.6
+22:37:56 INFO Running optimizer 1/1: LBFGSOpt
+22:37:56 INFO Running optimizer 1/1: LBFGSOpt
+22:37:56 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.6
+22:37:58 INFO Running optimizer 1/1: LBFGSOpt
+22:37:58 INFO Running optimizer 1/1: LBFGSOpt
+22:37:58 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.3
+22:38:00 INFO Running optimizer 1/1: LBFGSOpt
+22:38:00 INFO Running optimizer 1/1: LBFGSOpt
+22:38:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=140.6
+22:38:03 INFO Running optimizer 1/1: LBFGSOpt
+22:38:03 INFO Running optimizer 1/1: LBFGSOpt
+22:38:03 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.3
+22:38:05 INFO   init01 [OK] plan=829ms exec=13958ms steps=678 wall=15.8s (SR=100% 52/52)
+22:38:05 INFO Running optimizer 1/1: LBFGSOpt
+22:38:05 INFO Running optimizer 1/1: LBFGSOpt
+22:38:05 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.2
+22:38:06 INFO Running optimizer 1/1: LBFGSOpt
+22:38:06 INFO Running optimizer 1/1: LBFGSOpt
+22:38:06 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=92.6
+22:38:09 INFO Running optimizer 1/1: LBFGSOpt
+22:38:09 INFO Running optimizer 1/1: LBFGSOpt
+22:38:09 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.1
+22:38:12 INFO Running optimizer 1/1: LBFGSOpt
+22:38:12 INFO Running optimizer 1/1: LBFGSOpt
+22:38:12 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.9
+22:38:13 INFO Running optimizer 1/1: LBFGSOpt
+22:38:13 INFO Running optimizer 1/1: LBFGSOpt
+22:38:14 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=95.9
+22:38:16 INFO Running optimizer 1/1: LBFGSOpt
+22:38:16 INFO Running optimizer 1/1: LBFGSOpt
+22:38:16 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=143.4
+22:38:19 INFO Running optimizer 1/1: LBFGSOpt
+22:38:19 INFO Running optimizer 1/1: LBFGSOpt
+22:38:19 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=95.7
+22:38:21 INFO   init02 [OK] plan=808ms exec=13479ms steps=652 wall=15.3s (SR=100% 53/53)
+22:38:21 INFO Running optimizer 1/1: LBFGSOpt
+22:38:21 INFO Running optimizer 1/1: LBFGSOpt
+22:38:21 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.9
+22:38:21 INFO Running optimizer 1/1: LBFGSOpt
+22:38:21 INFO Running optimizer 1/1: LBFGSOpt
+22:38:21 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.9
+22:38:25 INFO Running optimizer 1/1: LBFGSOpt
+22:38:25 INFO Running optimizer 1/1: LBFGSOpt
+22:38:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.5
+22:38:27 INFO Running optimizer 1/1: LBFGSOpt
+22:38:27 INFO Running optimizer 1/1: LBFGSOpt
+22:38:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=95.5
+22:38:29 INFO Running optimizer 1/1: LBFGSOpt
+22:38:29 INFO Running optimizer 1/1: LBFGSOpt
+22:38:29 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=93.9
+22:38:32 INFO Running optimizer 1/1: LBFGSOpt
+22:38:32 INFO Running optimizer 1/1: LBFGSOpt
+22:38:32 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=145.0
+22:38:35 INFO Running optimizer 1/1: LBFGSOpt
+22:38:35 INFO Running optimizer 1/1: LBFGSOpt
+22:38:35 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.6
+22:38:36 INFO   init03 [OK] plan=827ms exec=13757ms steps=668 wall=15.5s (SR=100% 54/54)
+22:38:37 INFO Running optimizer 1/1: LBFGSOpt
+22:38:37 INFO Running optimizer 1/1: LBFGSOpt
+22:38:37 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.4
+22:38:37 INFO Running optimizer 1/1: LBFGSOpt
+22:38:37 INFO Running optimizer 1/1: LBFGSOpt
+22:38:37 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=93.7
+22:38:40 INFO Running optimizer 1/1: LBFGSOpt
+22:38:40 INFO Running optimizer 1/1: LBFGSOpt
+22:38:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.2
+22:38:43 INFO Running optimizer 1/1: LBFGSOpt
+22:38:43 INFO Running optimizer 1/1: LBFGSOpt
+22:38:43 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.5
+22:38:45 INFO Running optimizer 1/1: LBFGSOpt
+22:38:45 INFO Running optimizer 1/1: LBFGSOpt
+22:38:45 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.7
+22:38:47 INFO Running optimizer 1/1: LBFGSOpt
+22:38:47 INFO Running optimizer 1/1: LBFGSOpt
+22:38:47 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=144.0
+22:38:50 INFO Running optimizer 1/1: LBFGSOpt
+22:38:50 INFO Running optimizer 1/1: LBFGSOpt
+22:38:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.5
+22:38:51 INFO   init04 [OK] plan=819ms exec=12689ms steps=625 wall=14.5s (SR=100% 55/55)
+22:38:52 INFO Running optimizer 1/1: LBFGSOpt
+22:38:52 INFO Running optimizer 1/1: LBFGSOpt
+22:38:52 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=117.1
+22:38:52 INFO Running optimizer 1/1: LBFGSOpt
+22:38:52 INFO Running optimizer 1/1: LBFGSOpt
+22:38:52 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=105.9
+22:38:54 INFO Running optimizer 1/1: LBFGSOpt
+22:38:54 INFO Running optimizer 1/1: LBFGSOpt
+22:38:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.7
+22:38:57 INFO Running optimizer 1/1: LBFGSOpt
+22:38:57 INFO Running optimizer 1/1: LBFGSOpt
+22:38:57 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.1
+22:38:59 INFO Running optimizer 1/1: LBFGSOpt
+22:38:59 INFO Running optimizer 1/1: LBFGSOpt
+22:38:59 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.0
+22:39:02 INFO Running optimizer 1/1: LBFGSOpt
+22:39:02 INFO Running optimizer 1/1: LBFGSOpt
+22:39:02 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=140.1
+22:39:05 INFO Running optimizer 1/1: LBFGSOpt
+22:39:05 INFO Running optimizer 1/1: LBFGSOpt
+22:39:05 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.9
+22:39:06 INFO   init05 [OK] plan=841ms exec=12799ms steps=612 wall=14.6s (SR=100% 56/56)
+22:39:07 INFO Running optimizer 1/1: LBFGSOpt
+22:39:07 INFO Running optimizer 1/1: LBFGSOpt
+22:39:07 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.6
+22:39:07 INFO Running optimizer 1/1: LBFGSOpt
+22:39:07 INFO Running optimizer 1/1: LBFGSOpt
+22:39:07 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.7
+22:39:10 INFO Running optimizer 1/1: LBFGSOpt
+22:39:10 INFO Running optimizer 1/1: LBFGSOpt
+22:39:10 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.3
+22:39:12 INFO Running optimizer 1/1: LBFGSOpt
+22:39:13 INFO Running optimizer 1/1: LBFGSOpt
+22:39:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.1
+22:39:14 INFO Running optimizer 1/1: LBFGSOpt
+22:39:14 INFO Running optimizer 1/1: LBFGSOpt
+22:39:14 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.8
+22:39:16 INFO Running optimizer 1/1: LBFGSOpt
+22:39:17 INFO Running optimizer 1/1: LBFGSOpt
+22:39:17 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=142.7
+22:39:20 INFO Running optimizer 1/1: LBFGSOpt
+22:39:20 INFO Running optimizer 1/1: LBFGSOpt
+22:39:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.0
+22:39:21 INFO   init06 [OK] plan=834ms exec=12937ms steps=636 wall=14.8s (SR=100% 57/57)
+22:39:22 INFO Running optimizer 1/1: LBFGSOpt
+22:39:22 INFO Running optimizer 1/1: LBFGSOpt
+22:39:22 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=154.5
+22:39:22 INFO Running optimizer 1/1: LBFGSOpt
+22:39:22 INFO Running optimizer 1/1: LBFGSOpt
+22:39:22 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.5
+22:39:24 INFO Running optimizer 1/1: LBFGSOpt
+22:39:24 INFO Running optimizer 1/1: LBFGSOpt
+22:39:24 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.1
+22:39:27 INFO Running optimizer 1/1: LBFGSOpt
+22:39:27 INFO Running optimizer 1/1: LBFGSOpt
+22:39:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=139.0
+22:39:29 INFO Running optimizer 1/1: LBFGSOpt
+22:39:29 INFO Running optimizer 1/1: LBFGSOpt
+22:39:29 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=94.6
+22:39:32 INFO Running optimizer 1/1: LBFGSOpt
+22:39:32 INFO Running optimizer 1/1: LBFGSOpt
+22:39:32 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=138.3
+22:39:35 INFO Running optimizer 1/1: LBFGSOpt
+22:39:35 INFO Running optimizer 1/1: LBFGSOpt
+22:39:35 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.9
+22:39:36 INFO   init07 [OK] plan=909ms exec=12631ms steps=611 wall=14.5s (SR=100% 58/58)
+22:39:37 INFO Running optimizer 1/1: LBFGSOpt
+22:39:37 INFO Running optimizer 1/1: LBFGSOpt
+22:39:37 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.4
+22:39:37 INFO Running optimizer 1/1: LBFGSOpt
+22:39:37 INFO Running optimizer 1/1: LBFGSOpt
+22:39:37 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=98.9
+22:39:39 INFO Running optimizer 1/1: LBFGSOpt
+22:39:39 INFO Running optimizer 1/1: LBFGSOpt
+22:39:39 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.2
+22:39:42 INFO Running optimizer 1/1: LBFGSOpt
+22:39:42 INFO Running optimizer 1/1: LBFGSOpt
+22:39:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.4
+22:39:44 INFO Running optimizer 1/1: LBFGSOpt
+22:39:44 INFO Running optimizer 1/1: LBFGSOpt
+22:39:44 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.2
+22:39:47 INFO Running optimizer 1/1: LBFGSOpt
+22:39:47 INFO Running optimizer 1/1: LBFGSOpt
+22:39:47 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=162.5
+22:39:50 INFO Running optimizer 1/1: LBFGSOpt
+22:39:50 INFO Running optimizer 1/1: LBFGSOpt
+22:39:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=94.5
+22:39:51 INFO   init08 [OK] plan=844ms exec=12963ms steps=628 wall=14.8s (SR=100% 59/59)
+22:39:52 INFO Running optimizer 1/1: LBFGSOpt
+22:39:52 INFO Running optimizer 1/1: LBFGSOpt
+22:39:52 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.3
+22:39:52 INFO Running optimizer 1/1: LBFGSOpt
+22:39:52 INFO Running optimizer 1/1: LBFGSOpt
+22:39:52 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=98.6
+22:39:55 INFO Running optimizer 1/1: LBFGSOpt
+22:39:55 INFO Running optimizer 1/1: LBFGSOpt
+22:39:55 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.2
+22:39:58 INFO Running optimizer 1/1: LBFGSOpt
+22:39:58 INFO Running optimizer 1/1: LBFGSOpt
+22:39:58 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.6
+22:40:00 INFO Running optimizer 1/1: LBFGSOpt
+22:40:00 INFO Running optimizer 1/1: LBFGSOpt
+22:40:00 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=98.7
+22:40:02 INFO Running optimizer 1/1: LBFGSOpt
+22:40:02 INFO Running optimizer 1/1: LBFGSOpt
+22:40:02 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=136.9
+22:40:06 INFO Running optimizer 1/1: LBFGSOpt
+22:40:06 INFO Running optimizer 1/1: LBFGSOpt
+22:40:06 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.4
+22:40:07 INFO   init09 [OK] plan=822ms exec=13362ms steps=645 wall=15.2s (SR=100% 60/60)
+22:40:07 INFO Running optimizer 1/1: LBFGSOpt
+22:40:07 INFO Running optimizer 1/1: LBFGSOpt
+22:40:08 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.8
+22:40:08 INFO Running optimizer 1/1: LBFGSOpt
+22:40:08 INFO Running optimizer 1/1: LBFGSOpt
+22:40:08 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.5
+22:40:10 INFO Running optimizer 1/1: LBFGSOpt
+22:40:10 INFO Running optimizer 1/1: LBFGSOpt
+22:40:10 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=139.5
+22:40:13 INFO Running optimizer 1/1: LBFGSOpt
+22:40:13 INFO Running optimizer 1/1: LBFGSOpt
+22:40:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.7
+22:40:15 INFO Running optimizer 1/1: LBFGSOpt
+22:40:15 INFO Running optimizer 1/1: LBFGSOpt
+22:40:15 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.0
+22:40:17 INFO Running optimizer 1/1: LBFGSOpt
+22:40:17 INFO Running optimizer 1/1: LBFGSOpt
+22:40:17 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=140.0
+22:40:20 INFO Running optimizer 1/1: LBFGSOpt
+22:40:20 INFO Running optimizer 1/1: LBFGSOpt
+22:40:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.1
+22:40:22 INFO   init10 [OK] plan=861ms exec=12602ms steps=604 wall=14.5s (SR=100% 61/61)
+22:40:22 INFO Running optimizer 1/1: LBFGSOpt
+22:40:22 INFO Running optimizer 1/1: LBFGSOpt
+22:40:22 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=114.5
+22:40:22 INFO Running optimizer 1/1: LBFGSOpt
+22:40:23 INFO Running optimizer 1/1: LBFGSOpt
+22:40:23 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=107.8
+22:40:25 INFO Running optimizer 1/1: LBFGSOpt
+22:40:25 INFO Running optimizer 1/1: LBFGSOpt
+22:40:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.6
+22:40:28 INFO Running optimizer 1/1: LBFGSOpt
+22:40:28 INFO Running optimizer 1/1: LBFGSOpt
+22:40:28 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.0
+22:40:30 INFO Running optimizer 1/1: LBFGSOpt
+22:40:30 INFO Running optimizer 1/1: LBFGSOpt
+22:40:30 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=104.2
+22:40:32 INFO Running optimizer 1/1: LBFGSOpt
+22:40:32 INFO Running optimizer 1/1: LBFGSOpt
+22:40:32 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=137.9
+22:40:35 INFO Running optimizer 1/1: LBFGSOpt
+22:40:35 INFO Running optimizer 1/1: LBFGSOpt
+22:40:35 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.7
+22:40:37 INFO   init11 [OK] plan=837ms exec=12555ms steps=619 wall=14.4s (SR=100% 62/62)
+22:40:37 INFO Running optimizer 1/1: LBFGSOpt
+22:40:37 INFO Running optimizer 1/1: LBFGSOpt
+22:40:37 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=117.1
+22:40:37 INFO Running optimizer 1/1: LBFGSOpt
+22:40:37 INFO Running optimizer 1/1: LBFGSOpt
+22:40:37 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.6
+22:40:40 INFO Running optimizer 1/1: LBFGSOpt
+22:40:40 INFO Running optimizer 1/1: LBFGSOpt
+22:40:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.0
+22:40:43 INFO Running optimizer 1/1: LBFGSOpt
+22:40:43 INFO Running optimizer 1/1: LBFGSOpt
+22:40:43 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=117.7
+22:40:45 INFO Running optimizer 1/1: LBFGSOpt
+22:40:45 INFO Running optimizer 1/1: LBFGSOpt
+22:40:45 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.2
+22:40:47 INFO Running optimizer 1/1: LBFGSOpt
+22:40:47 INFO Running optimizer 1/1: LBFGSOpt
+22:40:47 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=145.7
+22:40:50 INFO Running optimizer 1/1: LBFGSOpt
+22:40:50 INFO Running optimizer 1/1: LBFGSOpt
+22:40:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.2
+22:40:52 INFO   init12 [OK] plan=872ms exec=12929ms steps=629 wall=14.8s (SR=100% 63/63)
+22:40:52 INFO Running optimizer 1/1: LBFGSOpt
+22:40:52 INFO Running optimizer 1/1: LBFGSOpt
+22:40:52 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.2
+22:40:52 INFO Running optimizer 1/1: LBFGSOpt
+22:40:52 INFO Running optimizer 1/1: LBFGSOpt
+22:40:52 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.5
+22:40:54 INFO Running optimizer 1/1: LBFGSOpt
+22:40:54 INFO Running optimizer 1/1: LBFGSOpt
+22:40:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.6
+22:40:57 INFO Running optimizer 1/1: LBFGSOpt
+22:40:57 INFO Running optimizer 1/1: LBFGSOpt
+22:40:57 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=120.7
+22:40:59 INFO Running optimizer 1/1: LBFGSOpt
+22:40:59 INFO Running optimizer 1/1: LBFGSOpt
+22:40:59 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.2
+22:41:02 INFO Running optimizer 1/1: LBFGSOpt
+22:41:02 INFO Running optimizer 1/1: LBFGSOpt
+22:41:02 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=136.9
+22:41:05 INFO Running optimizer 1/1: LBFGSOpt
+22:41:05 INFO Running optimizer 1/1: LBFGSOpt
+22:41:05 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.0
+22:41:07 INFO   init13 [OK] plan=842ms exec=13041ms steps=638 wall=14.9s (SR=100% 64/64)
+22:41:07 INFO Running optimizer 1/1: LBFGSOpt
+22:41:07 INFO Running optimizer 1/1: LBFGSOpt
+22:41:07 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=112.6
+22:41:08 INFO Running optimizer 1/1: LBFGSOpt
+22:41:08 INFO Running optimizer 1/1: LBFGSOpt
+22:41:08 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=103.4
+22:41:11 INFO Running optimizer 1/1: LBFGSOpt
+22:41:11 INFO Running optimizer 1/1: LBFGSOpt
+22:41:11 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.4
+22:41:14 INFO Running optimizer 1/1: LBFGSOpt
+22:41:14 INFO Running optimizer 1/1: LBFGSOpt
+22:41:14 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.7
+22:41:16 INFO Running optimizer 1/1: LBFGSOpt
+22:41:16 INFO Running optimizer 1/1: LBFGSOpt
+22:41:16 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.2
+22:41:18 INFO Running optimizer 1/1: LBFGSOpt
+22:41:18 INFO Running optimizer 1/1: LBFGSOpt
+22:41:19 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=148.8
+22:41:22 INFO Running optimizer 1/1: LBFGSOpt
+22:41:22 INFO Running optimizer 1/1: LBFGSOpt
+22:41:22 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=141.2
+22:41:23 INFO   init14 [OK] plan=891ms exec=13882ms steps=671 wall=15.8s (SR=100% 65/65)
+22:41:24 INFO Running optimizer 1/1: LBFGSOpt
+22:41:24 INFO Running optimizer 1/1: LBFGSOpt
+22:41:24 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=113.8
+22:41:24 INFO Running optimizer 1/1: LBFGSOpt
+22:41:24 INFO Running optimizer 1/1: LBFGSOpt
+22:41:24 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.9
+22:41:27 INFO Running optimizer 1/1: LBFGSOpt
+22:41:27 INFO Running optimizer 1/1: LBFGSOpt
+22:41:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.8
+22:41:30 INFO Running optimizer 1/1: LBFGSOpt
+22:41:30 INFO Running optimizer 1/1: LBFGSOpt
+22:41:30 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.2
+22:41:31 INFO Running optimizer 1/1: LBFGSOpt
+22:41:31 INFO Running optimizer 1/1: LBFGSOpt
+22:41:32 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.7
+22:41:34 INFO Running optimizer 1/1: LBFGSOpt
+22:41:34 INFO Running optimizer 1/1: LBFGSOpt
+22:41:34 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=145.8
+22:41:37 INFO Running optimizer 1/1: LBFGSOpt
+22:41:37 INFO Running optimizer 1/1: LBFGSOpt
+22:41:37 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.8
+22:41:39 INFO   init15 [OK] plan=846ms exec=13667ms steps=671 wall=15.5s (SR=100% 66/66)
+22:41:39 INFO Running optimizer 1/1: LBFGSOpt
+22:41:40 INFO Running optimizer 1/1: LBFGSOpt
+22:41:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.6
+22:41:40 INFO Running optimizer 1/1: LBFGSOpt
+22:41:40 INFO Running optimizer 1/1: LBFGSOpt
+22:41:40 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.4
+22:41:42 INFO Running optimizer 1/1: LBFGSOpt
+22:41:42 INFO Running optimizer 1/1: LBFGSOpt
+22:41:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.3
+22:41:45 INFO Running optimizer 1/1: LBFGSOpt
+22:41:45 INFO Running optimizer 1/1: LBFGSOpt
+22:41:45 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=126.3
+22:41:47 INFO Running optimizer 1/1: LBFGSOpt
+22:41:47 INFO Running optimizer 1/1: LBFGSOpt
+22:41:47 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.9
+22:41:49 INFO Running optimizer 1/1: LBFGSOpt
+22:41:49 INFO Running optimizer 1/1: LBFGSOpt
+22:41:49 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=134.9
+22:41:52 INFO Running optimizer 1/1: LBFGSOpt
+22:41:52 INFO Running optimizer 1/1: LBFGSOpt
+22:41:52 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.2
+22:41:54 INFO   init16 [OK] plan=844ms exec=12519ms steps=610 wall=14.3s (SR=100% 67/67)
+22:41:54 INFO Running optimizer 1/1: LBFGSOpt
+22:41:54 INFO Running optimizer 1/1: LBFGSOpt
+22:41:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=135.3
+22:41:54 INFO Running optimizer 1/1: LBFGSOpt
+22:41:54 INFO Running optimizer 1/1: LBFGSOpt
+22:41:54 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=143.6
+22:41:56 INFO Running optimizer 1/1: LBFGSOpt
+22:41:56 INFO Running optimizer 1/1: LBFGSOpt
+22:41:56 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=114.3
+22:42:00 INFO Running optimizer 1/1: LBFGSOpt
+22:42:00 INFO Running optimizer 1/1: LBFGSOpt
+22:42:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.9
+22:42:02 INFO Running optimizer 1/1: LBFGSOpt
+22:42:02 INFO Running optimizer 1/1: LBFGSOpt
+22:42:02 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.6
+22:42:04 INFO Running optimizer 1/1: LBFGSOpt
+22:42:04 INFO Running optimizer 1/1: LBFGSOpt
+22:42:04 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=142.5
+22:42:07 INFO Running optimizer 1/1: LBFGSOpt
+22:42:07 INFO Running optimizer 1/1: LBFGSOpt
+22:42:07 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.2
+22:42:08 INFO   init17 [OK] plan=943ms exec=12313ms steps=583 wall=14.2s (SR=100% 68/68)
+22:42:09 INFO Running optimizer 1/1: LBFGSOpt
+22:42:09 INFO Running optimizer 1/1: LBFGSOpt
+22:42:09 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.5
+22:42:09 INFO Running optimizer 1/1: LBFGSOpt
+22:42:09 INFO Running optimizer 1/1: LBFGSOpt
+22:42:09 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=103.3
+22:42:13 INFO Running optimizer 1/1: LBFGSOpt
+22:42:13 INFO Running optimizer 1/1: LBFGSOpt
+22:42:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.5
+22:42:15 INFO Running optimizer 1/1: LBFGSOpt
+22:42:15 INFO Running optimizer 1/1: LBFGSOpt
+22:42:16 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.2
+22:42:17 INFO Running optimizer 1/1: LBFGSOpt
+22:42:17 INFO Running optimizer 1/1: LBFGSOpt
+22:42:17 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.7
+22:42:20 INFO Running optimizer 1/1: LBFGSOpt
+22:42:20 INFO Running optimizer 1/1: LBFGSOpt
+22:42:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=141.3
+22:42:23 INFO Running optimizer 1/1: LBFGSOpt
+22:42:23 INFO Running optimizer 1/1: LBFGSOpt
+22:42:23 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.1
+22:42:24 INFO   init18 [OK] plan=838ms exec=13657ms steps=671 wall=15.5s (SR=100% 69/69)
+22:42:25 INFO Running optimizer 1/1: LBFGSOpt
+22:42:25 INFO Running optimizer 1/1: LBFGSOpt
+22:42:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.1
+22:42:25 INFO Running optimizer 1/1: LBFGSOpt
+22:42:25 INFO Running optimizer 1/1: LBFGSOpt
+22:42:25 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.7
+22:42:27 INFO Running optimizer 1/1: LBFGSOpt
+22:42:27 INFO Running optimizer 1/1: LBFGSOpt
+22:42:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.0
+22:42:30 INFO Running optimizer 1/1: LBFGSOpt
+22:42:30 INFO Running optimizer 1/1: LBFGSOpt
+22:42:30 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.5
+22:42:32 INFO Running optimizer 1/1: LBFGSOpt
+22:42:32 INFO Running optimizer 1/1: LBFGSOpt
+22:42:32 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.0
+22:42:34 INFO Running optimizer 1/1: LBFGSOpt
+22:42:34 INFO Running optimizer 1/1: LBFGSOpt
+22:42:34 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=133.3
+22:42:37 INFO Running optimizer 1/1: LBFGSOpt
+22:42:37 INFO Running optimizer 1/1: LBFGSOpt
+22:42:37 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.5
+22:42:39 INFO   init19 [OK] plan=817ms exec=12629ms steps=614 wall=14.4s (SR=100% 70/70)
+22:42:39 INFO Running optimizer 1/1: LBFGSOpt
+22:42:39 INFO Running optimizer 1/1: LBFGSOpt
+22:42:39 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.3
+22:42:40 INFO Running optimizer 1/1: LBFGSOpt
+22:42:40 INFO Running optimizer 1/1: LBFGSOpt
+22:42:40 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=105.9
+22:42:42 INFO Running optimizer 1/1: LBFGSOpt
+22:42:42 INFO Running optimizer 1/1: LBFGSOpt
+22:42:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.2
+22:42:45 INFO Running optimizer 1/1: LBFGSOpt
+22:42:45 INFO Running optimizer 1/1: LBFGSOpt
+22:42:45 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=158.7
+22:42:47 INFO Running optimizer 1/1: LBFGSOpt
+22:42:47 INFO Running optimizer 1/1: LBFGSOpt
+22:42:47 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.0
+22:42:50 INFO Running optimizer 1/1: LBFGSOpt
+22:42:50 INFO Running optimizer 1/1: LBFGSOpt
+22:42:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=147.4
+22:42:53 INFO Running optimizer 1/1: LBFGSOpt
+22:42:53 INFO Running optimizer 1/1: LBFGSOpt
+22:42:53 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.5
+22:42:54 INFO   init20 [OK] plan=922ms exec=13355ms steps=648 wall=15.3s (SR=100% 71/71)
+22:42:55 INFO Running optimizer 1/1: LBFGSOpt
+22:42:55 INFO Running optimizer 1/1: LBFGSOpt
+22:42:55 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=108.6
+22:42:55 INFO Running optimizer 1/1: LBFGSOpt
+22:42:55 INFO Running optimizer 1/1: LBFGSOpt
+22:42:55 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=107.3
+22:42:57 INFO Running optimizer 1/1: LBFGSOpt
+22:42:57 INFO Running optimizer 1/1: LBFGSOpt
+22:42:57 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.6
+22:43:00 INFO Running optimizer 1/1: LBFGSOpt
+22:43:00 INFO Running optimizer 1/1: LBFGSOpt
+22:43:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.5
+22:43:02 INFO Running optimizer 1/1: LBFGSOpt
+22:43:02 INFO Running optimizer 1/1: LBFGSOpt
+22:43:02 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.9
+22:43:04 INFO Running optimizer 1/1: LBFGSOpt
+22:43:04 INFO Running optimizer 1/1: LBFGSOpt
+22:43:04 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=147.0
+22:43:08 INFO Running optimizer 1/1: LBFGSOpt
+22:43:08 INFO Running optimizer 1/1: LBFGSOpt
+22:43:08 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.4
+22:43:09 INFO   init21 [OK] plan=869ms exec=12304ms steps=599 wall=14.2s (SR=100% 72/72)
+22:43:10 INFO Running optimizer 1/1: LBFGSOpt
+22:43:10 INFO Running optimizer 1/1: LBFGSOpt
+22:43:10 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=126.7
+22:43:10 INFO Running optimizer 1/1: LBFGSOpt
+22:43:10 INFO Running optimizer 1/1: LBFGSOpt
+22:43:10 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.9
+22:43:13 INFO Running optimizer 1/1: LBFGSOpt
+22:43:13 INFO Running optimizer 1/1: LBFGSOpt
+22:43:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.5
+22:43:16 INFO Running optimizer 1/1: LBFGSOpt
+22:43:16 INFO Running optimizer 1/1: LBFGSOpt
+22:43:16 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=93.0
+22:43:17 INFO Running optimizer 1/1: LBFGSOpt
+22:43:17 INFO Running optimizer 1/1: LBFGSOpt
+22:43:17 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.5
+22:43:20 INFO Running optimizer 1/1: LBFGSOpt
+22:43:20 INFO Running optimizer 1/1: LBFGSOpt
+22:43:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=139.6
+22:43:23 INFO Running optimizer 1/1: LBFGSOpt
+22:43:23 INFO Running optimizer 1/1: LBFGSOpt
+22:43:23 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.7
+22:43:25 INFO   init22 [OK] plan=824ms exec=13316ms steps=658 wall=15.1s (SR=100% 73/73)
+22:43:25 INFO Running optimizer 1/1: LBFGSOpt
+22:43:25 INFO Running optimizer 1/1: LBFGSOpt
+22:43:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.3
+22:43:25 INFO Running optimizer 1/1: LBFGSOpt
+22:43:25 INFO Running optimizer 1/1: LBFGSOpt
+22:43:25 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.7
+22:43:27 INFO Running optimizer 1/1: LBFGSOpt
+22:43:27 INFO Running optimizer 1/1: LBFGSOpt
+22:43:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.2
+22:43:30 INFO Running optimizer 1/1: LBFGSOpt
+22:43:30 INFO Running optimizer 1/1: LBFGSOpt
+22:43:30 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.8
+22:43:32 INFO Running optimizer 1/1: LBFGSOpt
+22:43:32 INFO Running optimizer 1/1: LBFGSOpt
+22:43:32 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=141.1
+22:43:35 INFO Running optimizer 1/1: LBFGSOpt
+22:43:35 INFO Running optimizer 1/1: LBFGSOpt
+22:43:35 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=137.3
+22:43:38 INFO Running optimizer 1/1: LBFGSOpt
+22:43:38 INFO Running optimizer 1/1: LBFGSOpt
+22:43:38 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.1
+22:43:40 INFO   init23 [OK] plan=870ms exec=12840ms steps=621 wall=14.7s (SR=100% 74/74)
+22:43:40 INFO Running optimizer 1/1: LBFGSOpt
+22:43:40 INFO Running optimizer 1/1: LBFGSOpt
+22:43:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.0
+22:43:40 INFO Running optimizer 1/1: LBFGSOpt
+22:43:40 INFO Running optimizer 1/1: LBFGSOpt
+22:43:40 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.2
+22:43:43 INFO Running optimizer 1/1: LBFGSOpt
+22:43:43 INFO Running optimizer 1/1: LBFGSOpt
+22:43:43 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=130.6
+22:43:46 INFO Running optimizer 1/1: LBFGSOpt
+22:43:46 INFO Running optimizer 1/1: LBFGSOpt
+22:43:46 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.0
+22:43:48 INFO Running optimizer 1/1: LBFGSOpt
+22:43:48 INFO Running optimizer 1/1: LBFGSOpt
+22:43:48 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.6
+22:43:50 INFO Running optimizer 1/1: LBFGSOpt
+22:43:50 INFO Running optimizer 1/1: LBFGSOpt
+22:43:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=142.9
+22:43:53 INFO Running optimizer 1/1: LBFGSOpt
+22:43:53 INFO Running optimizer 1/1: LBFGSOpt
+22:43:53 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.6
+22:43:55 INFO   init24 [OK] plan=864ms exec=13060ms steps=632 wall=14.9s (SR=100% 75/75)
+22:43:55 INFO Running optimizer 1/1: LBFGSOpt
+22:43:55 INFO Running optimizer 1/1: LBFGSOpt
+22:43:55 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.6
+22:43:56 INFO Running optimizer 1/1: LBFGSOpt
+22:43:56 INFO Running optimizer 1/1: LBFGSOpt
+22:43:56 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.8
+22:43:58 INFO Running optimizer 1/1: LBFGSOpt
+22:43:58 INFO Running optimizer 1/1: LBFGSOpt
+22:43:58 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.8
+22:44:01 INFO Running optimizer 1/1: LBFGSOpt
+22:44:01 INFO Running optimizer 1/1: LBFGSOpt
+22:44:01 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.8
+22:44:03 INFO Running optimizer 1/1: LBFGSOpt
+22:44:03 INFO Running optimizer 1/1: LBFGSOpt
+22:44:03 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.1
+22:44:05 INFO Running optimizer 1/1: LBFGSOpt
+22:44:05 INFO Running optimizer 1/1: LBFGSOpt
+22:44:05 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=166.6
+22:44:08 INFO Running optimizer 1/1: LBFGSOpt
+22:44:08 INFO Running optimizer 1/1: LBFGSOpt
+22:44:08 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.4
+22:44:10 INFO   init25 [OK] plan=838ms exec=12766ms steps=629 wall=14.6s (SR=100% 76/76)
+22:44:10 INFO Running optimizer 1/1: LBFGSOpt
+22:44:10 INFO Running optimizer 1/1: LBFGSOpt
+22:44:10 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.9
+22:44:10 INFO Running optimizer 1/1: LBFGSOpt
+22:44:10 INFO Running optimizer 1/1: LBFGSOpt
+22:44:10 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.1
+22:44:13 INFO Running optimizer 1/1: LBFGSOpt
+22:44:13 INFO Running optimizer 1/1: LBFGSOpt
+22:44:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.6
+22:44:16 INFO Running optimizer 1/1: LBFGSOpt
+22:44:16 INFO Running optimizer 1/1: LBFGSOpt
+22:44:16 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.0
+22:44:17 INFO Running optimizer 1/1: LBFGSOpt
+22:44:17 INFO Running optimizer 1/1: LBFGSOpt
+22:44:17 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.3
+22:44:20 INFO Running optimizer 1/1: LBFGSOpt
+22:44:20 INFO Running optimizer 1/1: LBFGSOpt
+22:44:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=135.9
+22:44:23 INFO Running optimizer 1/1: LBFGSOpt
+22:44:23 INFO Running optimizer 1/1: LBFGSOpt
+22:44:23 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=95.6
+22:44:25 INFO   init26 [OK] plan=810ms exec=12759ms steps=627 wall=14.5s (SR=100% 77/77)
+22:44:25 INFO Running optimizer 1/1: LBFGSOpt
+22:44:25 INFO Running optimizer 1/1: LBFGSOpt
+22:44:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.9
+22:44:25 INFO Running optimizer 1/1: LBFGSOpt
+22:44:25 INFO Running optimizer 1/1: LBFGSOpt
+22:44:25 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=89.5
+22:44:28 INFO Running optimizer 1/1: LBFGSOpt
+22:44:28 INFO Running optimizer 1/1: LBFGSOpt
+22:44:28 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.1
+22:44:31 INFO Running optimizer 1/1: LBFGSOpt
+22:44:31 INFO Running optimizer 1/1: LBFGSOpt
+22:44:31 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=95.9
+22:44:32 INFO Running optimizer 1/1: LBFGSOpt
+22:44:33 INFO Running optimizer 1/1: LBFGSOpt
+22:44:33 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=91.4
+22:44:35 INFO Running optimizer 1/1: LBFGSOpt
+22:44:35 INFO Running optimizer 1/1: LBFGSOpt
+22:44:35 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=159.0
+22:44:38 INFO Running optimizer 1/1: LBFGSOpt
+22:44:38 INFO Running optimizer 1/1: LBFGSOpt
+22:44:38 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.3
+22:44:39 INFO   init27 [OK] plan=814ms exec=12688ms steps=638 wall=14.4s (SR=100% 78/78)
+22:44:40 INFO Running optimizer 1/1: LBFGSOpt
+22:44:40 INFO Running optimizer 1/1: LBFGSOpt
+22:44:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.2
+22:44:40 INFO Running optimizer 1/1: LBFGSOpt
+22:44:40 INFO Running optimizer 1/1: LBFGSOpt
+22:44:40 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=103.3
+22:44:42 INFO Running optimizer 1/1: LBFGSOpt
+22:44:42 INFO Running optimizer 1/1: LBFGSOpt
+22:44:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.3
+22:44:45 INFO Running optimizer 1/1: LBFGSOpt
+22:44:45 INFO Running optimizer 1/1: LBFGSOpt
+22:44:45 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.0
+22:44:47 INFO Running optimizer 1/1: LBFGSOpt
+22:44:47 INFO Running optimizer 1/1: LBFGSOpt
+22:44:47 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.2
+22:44:50 INFO Running optimizer 1/1: LBFGSOpt
+22:44:50 INFO Running optimizer 1/1: LBFGSOpt
+22:44:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=136.1
+22:44:53 INFO Running optimizer 1/1: LBFGSOpt
+22:44:53 INFO Running optimizer 1/1: LBFGSOpt
+22:44:53 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.7
+22:44:55 INFO   init28 [OK] plan=836ms exec=13285ms steps=634 wall=15.1s (SR=100% 79/79)
+22:44:55 INFO Running optimizer 1/1: LBFGSOpt
+22:44:55 INFO Running optimizer 1/1: LBFGSOpt
+22:44:55 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.7
+22:44:56 INFO Running optimizer 1/1: LBFGSOpt
+22:44:56 INFO Running optimizer 1/1: LBFGSOpt
+22:44:56 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=111.9
+22:44:59 INFO Running optimizer 1/1: LBFGSOpt
+22:44:59 INFO Running optimizer 1/1: LBFGSOpt
+22:44:59 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.0
+22:45:01 INFO Running optimizer 1/1: LBFGSOpt
+22:45:01 INFO Running optimizer 1/1: LBFGSOpt
+22:45:02 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.7
+22:45:03 INFO Running optimizer 1/1: LBFGSOpt
+22:45:03 INFO Running optimizer 1/1: LBFGSOpt
+22:45:03 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.8
+22:45:06 INFO Running optimizer 1/1: LBFGSOpt
+22:45:06 INFO Running optimizer 1/1: LBFGSOpt
+22:45:06 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=160.5
+22:45:09 INFO Running optimizer 1/1: LBFGSOpt
+22:45:09 INFO Running optimizer 1/1: LBFGSOpt
+22:45:09 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.7
+22:45:10 INFO   init29 [OK] plan=876ms exec=13227ms steps=644 wall=15.1s (SR=100% 80/80)
+22:45:11 INFO Running optimizer 1/1: LBFGSOpt
+22:45:11 INFO Running optimizer 1/1: LBFGSOpt
+22:45:11 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.4
+22:45:11 INFO Running optimizer 1/1: LBFGSOpt
+22:45:11 INFO Running optimizer 1/1: LBFGSOpt
+22:45:11 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=95.9
+22:45:13 INFO Running optimizer 1/1: LBFGSOpt
+22:45:13 INFO Running optimizer 1/1: LBFGSOpt
+22:45:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.3
+22:45:16 INFO Running optimizer 1/1: LBFGSOpt
+22:45:16 INFO Running optimizer 1/1: LBFGSOpt
+22:45:16 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=102.7
+22:45:18 INFO Running optimizer 1/1: LBFGSOpt
+22:45:18 INFO Running optimizer 1/1: LBFGSOpt
+22:45:18 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.3
+22:45:20 INFO Running optimizer 1/1: LBFGSOpt
+22:45:20 INFO Running optimizer 1/1: LBFGSOpt
+22:45:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=163.7
+22:45:23 INFO Running optimizer 1/1: LBFGSOpt
+22:45:24 INFO Running optimizer 1/1: LBFGSOpt
+22:45:24 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=133.6
+22:45:25 INFO   init30 [OK] plan=871ms exec=12518ms steps=605 wall=14.4s (SR=100% 81/81)
+22:45:26 INFO Running optimizer 1/1: LBFGSOpt
+22:45:26 INFO Running optimizer 1/1: LBFGSOpt
+22:45:26 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=116.5
+22:45:26 INFO Running optimizer 1/1: LBFGSOpt
+22:45:26 INFO Running optimizer 1/1: LBFGSOpt
+22:45:26 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=122.9
+22:45:28 INFO Running optimizer 1/1: LBFGSOpt
+22:45:28 INFO Running optimizer 1/1: LBFGSOpt
+22:45:28 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.1
+22:45:31 INFO Running optimizer 1/1: LBFGSOpt
+22:45:31 INFO Running optimizer 1/1: LBFGSOpt
+22:45:31 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.1
+22:45:33 INFO Running optimizer 1/1: LBFGSOpt
+22:45:33 INFO Running optimizer 1/1: LBFGSOpt
+22:45:33 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.8
+22:45:35 INFO Running optimizer 1/1: LBFGSOpt
+22:45:35 INFO Running optimizer 1/1: LBFGSOpt
+22:45:35 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=142.1
+22:45:38 INFO Running optimizer 1/1: LBFGSOpt
+22:45:38 INFO Running optimizer 1/1: LBFGSOpt
+22:45:38 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.8
+22:45:40 INFO   init31 [OK] plan=872ms exec=12633ms steps=628 wall=14.5s (SR=100% 82/82)
+22:45:40 INFO Running optimizer 1/1: LBFGSOpt
+22:45:40 INFO Running optimizer 1/1: LBFGSOpt
+22:45:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.1
+22:45:40 INFO Running optimizer 1/1: LBFGSOpt
+22:45:41 INFO Running optimizer 1/1: LBFGSOpt
+22:45:41 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=94.9
+22:45:42 INFO Running optimizer 1/1: LBFGSOpt
+22:45:42 INFO Running optimizer 1/1: LBFGSOpt
+22:45:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.4
+22:45:45 INFO Running optimizer 1/1: LBFGSOpt
+22:45:45 INFO Running optimizer 1/1: LBFGSOpt
+22:45:45 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.7
+22:45:47 INFO Running optimizer 1/1: LBFGSOpt
+22:45:47 INFO Running optimizer 1/1: LBFGSOpt
+22:45:47 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=102.2
+22:45:50 INFO Running optimizer 1/1: LBFGSOpt
+22:45:50 INFO Running optimizer 1/1: LBFGSOpt
+22:45:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=125.6
+22:45:53 INFO Running optimizer 1/1: LBFGSOpt
+22:45:53 INFO Running optimizer 1/1: LBFGSOpt
+22:45:53 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=136.3
+22:45:54 INFO   init32 [OK] plan=836ms exec=12389ms steps=605 wall=14.2s (SR=100% 83/83)
+22:45:55 INFO Running optimizer 1/1: LBFGSOpt
+22:45:55 INFO Running optimizer 1/1: LBFGSOpt
+22:45:55 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=112.1
+22:45:55 INFO Running optimizer 1/1: LBFGSOpt
+22:45:55 INFO Running optimizer 1/1: LBFGSOpt
+22:45:55 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=104.0
+22:45:57 INFO Running optimizer 1/1: LBFGSOpt
+22:45:57 INFO Running optimizer 1/1: LBFGSOpt
+22:45:57 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.1
+22:46:00 INFO Running optimizer 1/1: LBFGSOpt
+22:46:00 INFO Running optimizer 1/1: LBFGSOpt
+22:46:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=94.1
+22:46:02 INFO Running optimizer 1/1: LBFGSOpt
+22:46:02 INFO Running optimizer 1/1: LBFGSOpt
+22:46:02 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.1
+22:46:04 INFO Running optimizer 1/1: LBFGSOpt
+22:46:04 INFO Running optimizer 1/1: LBFGSOpt
+22:46:04 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=143.1
+22:46:07 INFO Running optimizer 1/1: LBFGSOpt
+22:46:07 INFO Running optimizer 1/1: LBFGSOpt
+22:46:07 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=95.3
+22:46:09 INFO   init33 [OK] plan=830ms exec=12257ms steps=594 wall=14.0s (SR=100% 84/84)
+22:46:09 INFO Running optimizer 1/1: LBFGSOpt
+22:46:09 INFO Running optimizer 1/1: LBFGSOpt
+22:46:09 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=95.2
+22:46:09 INFO Running optimizer 1/1: LBFGSOpt
+22:46:09 INFO Running optimizer 1/1: LBFGSOpt
+22:46:09 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=87.7
+22:46:12 INFO Running optimizer 1/1: LBFGSOpt
+22:46:12 INFO Running optimizer 1/1: LBFGSOpt
+22:46:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=93.7
+22:46:15 INFO Running optimizer 1/1: LBFGSOpt
+22:46:15 INFO Running optimizer 1/1: LBFGSOpt
+22:46:15 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.5
+22:46:17 INFO Running optimizer 1/1: LBFGSOpt
+22:46:17 INFO Running optimizer 1/1: LBFGSOpt
+22:46:17 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.5
+22:46:19 INFO Running optimizer 1/1: LBFGSOpt
+22:46:19 INFO Running optimizer 1/1: LBFGSOpt
+22:46:19 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=142.3
+22:46:22 INFO Running optimizer 1/1: LBFGSOpt
+22:46:22 INFO Running optimizer 1/1: LBFGSOpt
+22:46:22 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.9
+22:46:24 INFO   init34 [OK] plan=799ms exec=12764ms steps=630 wall=14.5s (SR=100% 85/85)
+22:46:24 INFO Running optimizer 1/1: LBFGSOpt
+22:46:24 INFO Running optimizer 1/1: LBFGSOpt
+22:46:24 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.2
+22:46:24 INFO Running optimizer 1/1: LBFGSOpt
+22:46:24 INFO Running optimizer 1/1: LBFGSOpt
+22:46:24 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=116.3
+22:46:27 INFO Running optimizer 1/1: LBFGSOpt
+22:46:27 INFO Running optimizer 1/1: LBFGSOpt
+22:46:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=113.0
+22:46:30 INFO Running optimizer 1/1: LBFGSOpt
+22:46:30 INFO Running optimizer 1/1: LBFGSOpt
+22:46:30 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=111.6
+22:46:32 INFO Running optimizer 1/1: LBFGSOpt
+22:46:32 INFO Running optimizer 1/1: LBFGSOpt
+22:46:32 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.5
+22:46:35 INFO Running optimizer 1/1: LBFGSOpt
+22:46:35 INFO Running optimizer 1/1: LBFGSOpt
+22:46:35 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=142.7
+22:46:38 INFO Running optimizer 1/1: LBFGSOpt
+22:46:38 INFO Running optimizer 1/1: LBFGSOpt
+22:46:38 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.3
+22:46:39 INFO   init35 [OK] plan=860ms exec=13572ms steps=657 wall=15.4s (SR=100% 86/86)
+22:46:40 INFO Running optimizer 1/1: LBFGSOpt
+22:46:40 INFO Running optimizer 1/1: LBFGSOpt
+22:46:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=109.6
+22:46:40 INFO Running optimizer 1/1: LBFGSOpt
+22:46:40 INFO Running optimizer 1/1: LBFGSOpt
+22:46:40 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=140.2
+22:46:42 INFO Running optimizer 1/1: LBFGSOpt
+22:46:42 INFO Running optimizer 1/1: LBFGSOpt
+22:46:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=151.4
+22:46:45 INFO Running optimizer 1/1: LBFGSOpt
+22:46:45 INFO Running optimizer 1/1: LBFGSOpt
+22:46:45 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.9
+22:46:47 INFO Running optimizer 1/1: LBFGSOpt
+22:46:47 INFO Running optimizer 1/1: LBFGSOpt
+22:46:47 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.4
+22:46:49 INFO Running optimizer 1/1: LBFGSOpt
+22:46:49 INFO Running optimizer 1/1: LBFGSOpt
+22:46:49 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=131.6
+22:46:53 INFO Running optimizer 1/1: LBFGSOpt
+22:46:53 INFO Running optimizer 1/1: LBFGSOpt
+22:46:53 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.0
+22:46:54 INFO   init36 [OK] plan=920ms exec=12675ms steps=607 wall=14.6s (SR=100% 87/87)
+22:46:55 INFO Running optimizer 1/1: LBFGSOpt
+22:46:55 INFO Running optimizer 1/1: LBFGSOpt
+22:46:55 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.6
+22:46:55 INFO Running optimizer 1/1: LBFGSOpt
+22:46:55 INFO Running optimizer 1/1: LBFGSOpt
+22:46:55 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=106.7
+22:46:57 INFO Running optimizer 1/1: LBFGSOpt
+22:46:57 INFO Running optimizer 1/1: LBFGSOpt
+22:46:57 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.5
+22:47:00 INFO Running optimizer 1/1: LBFGSOpt
+22:47:00 INFO Running optimizer 1/1: LBFGSOpt
+22:47:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.0
+22:47:02 INFO Running optimizer 1/1: LBFGSOpt
+22:47:02 INFO Running optimizer 1/1: LBFGSOpt
+22:47:02 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.4
+22:47:05 INFO Running optimizer 1/1: LBFGSOpt
+22:47:05 INFO Running optimizer 1/1: LBFGSOpt
+22:47:05 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=144.0
+22:47:08 INFO Running optimizer 1/1: LBFGSOpt
+22:47:08 INFO Running optimizer 1/1: LBFGSOpt
+22:47:08 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.5
+22:47:10 INFO   init37 [OK] plan=841ms exec=13333ms steps=639 wall=15.1s (SR=100% 88/88)
+22:47:10 INFO Running optimizer 1/1: LBFGSOpt
+22:47:10 INFO Running optimizer 1/1: LBFGSOpt
+22:47:10 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.2
+22:47:10 INFO Running optimizer 1/1: LBFGSOpt
+22:47:10 INFO Running optimizer 1/1: LBFGSOpt
+22:47:10 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.1
+22:47:12 INFO Running optimizer 1/1: LBFGSOpt
+22:47:12 INFO Running optimizer 1/1: LBFGSOpt
+22:47:12 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.7
+22:47:15 INFO Running optimizer 1/1: LBFGSOpt
+22:47:15 INFO Running optimizer 1/1: LBFGSOpt
+22:47:15 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.8
+22:47:17 INFO Running optimizer 1/1: LBFGSOpt
+22:47:17 INFO Running optimizer 1/1: LBFGSOpt
+22:47:17 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=95.8
+22:47:20 INFO Running optimizer 1/1: LBFGSOpt
+22:47:20 INFO Running optimizer 1/1: LBFGSOpt
+22:47:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=145.0
+22:47:23 INFO Running optimizer 1/1: LBFGSOpt
+22:47:23 INFO Running optimizer 1/1: LBFGSOpt
+22:47:23 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.7
+22:47:24 INFO   init38 [OK] plan=816ms exec=12451ms steps=602 wall=14.2s (SR=100% 89/89)
+22:47:25 INFO Running optimizer 1/1: LBFGSOpt
+22:47:25 INFO Running optimizer 1/1: LBFGSOpt
+22:47:25 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=149.5
+22:47:25 INFO Running optimizer 1/1: LBFGSOpt
+22:47:25 INFO Running optimizer 1/1: LBFGSOpt
+22:47:25 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=122.6
+22:47:27 INFO Running optimizer 1/1: LBFGSOpt
+22:47:27 INFO Running optimizer 1/1: LBFGSOpt
+22:47:27 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=95.9
+22:47:30 INFO Running optimizer 1/1: LBFGSOpt
+22:47:30 INFO Running optimizer 1/1: LBFGSOpt
+22:47:30 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.3
+22:47:32 INFO Running optimizer 1/1: LBFGSOpt
+22:47:32 INFO Running optimizer 1/1: LBFGSOpt
+22:47:32 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=107.1
+22:47:34 INFO Running optimizer 1/1: LBFGSOpt
+22:47:35 INFO Running optimizer 1/1: LBFGSOpt
+22:47:35 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=129.4
+22:47:38 INFO Running optimizer 1/1: LBFGSOpt
+22:47:38 INFO Running optimizer 1/1: LBFGSOpt
+22:47:38 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.7
+22:47:39 INFO   init39 [OK] plan=894ms exec=12548ms steps=610 wall=14.4s (SR=100% 90/90)
+22:47:40 INFO Running optimizer 1/1: LBFGSOpt
+22:47:40 INFO Running optimizer 1/1: LBFGSOpt
+22:47:40 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.4
+22:47:40 INFO Running optimizer 1/1: LBFGSOpt
+22:47:40 INFO Running optimizer 1/1: LBFGSOpt
+22:47:40 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.5
+22:47:42 INFO Running optimizer 1/1: LBFGSOpt
+22:47:42 INFO Running optimizer 1/1: LBFGSOpt
+22:47:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.7
+22:47:45 INFO Running optimizer 1/1: LBFGSOpt
+22:47:45 INFO Running optimizer 1/1: LBFGSOpt
+22:47:45 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.1
+22:47:47 INFO Running optimizer 1/1: LBFGSOpt
+22:47:47 INFO Running optimizer 1/1: LBFGSOpt
+22:47:47 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=98.3
+22:47:50 INFO Running optimizer 1/1: LBFGSOpt
+22:47:50 INFO Running optimizer 1/1: LBFGSOpt
+22:47:50 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=142.3
+22:47:53 INFO Running optimizer 1/1: LBFGSOpt
+22:47:53 INFO Running optimizer 1/1: LBFGSOpt
+22:47:53 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.1
+22:47:55 INFO   init40 [OK] plan=818ms exec=13310ms steps=638 wall=15.1s (SR=100% 91/91)
+22:47:55 INFO Running optimizer 1/1: LBFGSOpt
+22:47:55 INFO Running optimizer 1/1: LBFGSOpt
+22:47:55 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.3
+22:47:55 INFO Running optimizer 1/1: LBFGSOpt
+22:47:55 INFO Running optimizer 1/1: LBFGSOpt
+22:47:55 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=95.5
+22:47:58 INFO Running optimizer 1/1: LBFGSOpt
+22:47:58 INFO Running optimizer 1/1: LBFGSOpt
+22:47:58 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.1
+22:48:01 INFO Running optimizer 1/1: LBFGSOpt
+22:48:01 INFO Running optimizer 1/1: LBFGSOpt
+22:48:01 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=99.1
+22:48:03 INFO Running optimizer 1/1: LBFGSOpt
+22:48:03 INFO Running optimizer 1/1: LBFGSOpt
+22:48:03 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.8
+22:48:05 INFO Running optimizer 1/1: LBFGSOpt
+22:48:05 INFO Running optimizer 1/1: LBFGSOpt
+22:48:06 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=175.6
+22:48:08 INFO Running optimizer 1/1: LBFGSOpt
+22:48:09 INFO Running optimizer 1/1: LBFGSOpt
+22:48:09 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.2
+22:48:10 INFO   init41 [OK] plan=857ms exec=13323ms steps=643 wall=15.1s (SR=100% 92/92)
+22:48:11 INFO Running optimizer 1/1: LBFGSOpt
+22:48:11 INFO Running optimizer 1/1: LBFGSOpt
+22:48:11 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.2
+22:48:11 INFO Running optimizer 1/1: LBFGSOpt
+22:48:11 INFO Running optimizer 1/1: LBFGSOpt
+22:48:11 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=92.8
+22:48:13 INFO Running optimizer 1/1: LBFGSOpt
+22:48:13 INFO Running optimizer 1/1: LBFGSOpt
+22:48:13 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.7
+22:48:16 INFO Running optimizer 1/1: LBFGSOpt
+22:48:16 INFO Running optimizer 1/1: LBFGSOpt
+22:48:16 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.7
+22:48:18 INFO Running optimizer 1/1: LBFGSOpt
+22:48:18 INFO Running optimizer 1/1: LBFGSOpt
+22:48:18 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.4
+22:48:20 INFO Running optimizer 1/1: LBFGSOpt
+22:48:20 INFO Running optimizer 1/1: LBFGSOpt
+22:48:20 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=139.9
+22:48:23 INFO Running optimizer 1/1: LBFGSOpt
+22:48:24 INFO Running optimizer 1/1: LBFGSOpt
+22:48:24 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.8
+22:48:25 INFO   init42 [OK] plan=827ms exec=12725ms steps=619 wall=14.6s (SR=100% 93/93)
+22:48:25 INFO Running optimizer 1/1: LBFGSOpt
+22:48:26 INFO Running optimizer 1/1: LBFGSOpt
+22:48:26 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=112.0
+22:48:26 INFO Running optimizer 1/1: LBFGSOpt
+22:48:26 INFO Running optimizer 1/1: LBFGSOpt
+22:48:26 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=100.5
+22:48:29 INFO Running optimizer 1/1: LBFGSOpt
+22:48:29 INFO Running optimizer 1/1: LBFGSOpt
+22:48:29 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=95.2
+22:48:32 INFO Running optimizer 1/1: LBFGSOpt
+22:48:32 INFO Running optimizer 1/1: LBFGSOpt
+22:48:32 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.5
+22:48:34 INFO Running optimizer 1/1: LBFGSOpt
+22:48:34 INFO Running optimizer 1/1: LBFGSOpt
+22:48:34 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=95.8
+22:48:36 INFO Running optimizer 1/1: LBFGSOpt
+22:48:36 INFO Running optimizer 1/1: LBFGSOpt
+22:48:36 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=134.4
+22:48:39 INFO Running optimizer 1/1: LBFGSOpt
+22:48:39 INFO Running optimizer 1/1: LBFGSOpt
+22:48:39 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.2
+22:48:41 INFO   init43 [OK] plan=824ms exec=13760ms steps=670 wall=15.6s (SR=100% 94/94)
+22:48:42 INFO Running optimizer 1/1: LBFGSOpt
+22:48:42 INFO Running optimizer 1/1: LBFGSOpt
+22:48:42 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=110.5
+22:48:42 INFO Running optimizer 1/1: LBFGSOpt
+22:48:42 INFO Running optimizer 1/1: LBFGSOpt
+22:48:42 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=139.9
+22:48:44 INFO Running optimizer 1/1: LBFGSOpt
+22:48:44 INFO Running optimizer 1/1: LBFGSOpt
+22:48:45 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.3
+22:48:47 INFO Running optimizer 1/1: LBFGSOpt
+22:48:47 INFO Running optimizer 1/1: LBFGSOpt
+22:48:47 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.0
+22:48:49 INFO Running optimizer 1/1: LBFGSOpt
+22:48:49 INFO Running optimizer 1/1: LBFGSOpt
+22:48:49 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=103.4
+22:48:51 INFO Running optimizer 1/1: LBFGSOpt
+22:48:51 INFO Running optimizer 1/1: LBFGSOpt
+22:48:51 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=147.1
+22:48:54 INFO Running optimizer 1/1: LBFGSOpt
+22:48:54 INFO Running optimizer 1/1: LBFGSOpt
+22:48:54 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=104.3
+22:48:56 INFO   init44 [OK] plan=876ms exec=12593ms steps=614 wall=14.4s (SR=100% 95/95)
+22:48:56 INFO Running optimizer 1/1: LBFGSOpt
+22:48:56 INFO Running optimizer 1/1: LBFGSOpt
+22:48:56 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=97.7
+22:48:56 INFO Running optimizer 1/1: LBFGSOpt
+22:48:56 INFO Running optimizer 1/1: LBFGSOpt
+22:48:57 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.5
+22:49:00 INFO Running optimizer 1/1: LBFGSOpt
+22:49:00 INFO Running optimizer 1/1: LBFGSOpt
+22:49:00 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=105.5
+22:49:03 INFO Running optimizer 1/1: LBFGSOpt
+22:49:03 INFO Running optimizer 1/1: LBFGSOpt
+22:49:03 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.9
+22:49:04 INFO Running optimizer 1/1: LBFGSOpt
+22:49:05 INFO Running optimizer 1/1: LBFGSOpt
+22:49:05 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.9
+22:49:07 INFO Running optimizer 1/1: LBFGSOpt
+22:49:07 INFO Running optimizer 1/1: LBFGSOpt
+22:49:07 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=152.5
+22:49:10 INFO Running optimizer 1/1: LBFGSOpt
+22:49:10 INFO Running optimizer 1/1: LBFGSOpt
+22:49:10 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.8
+22:49:12 INFO   init45 [OK] plan=829ms exec=13904ms steps=671 wall=15.7s (SR=100% 96/96)
+22:49:12 INFO Running optimizer 1/1: LBFGSOpt
+22:49:12 INFO Running optimizer 1/1: LBFGSOpt
+22:49:12 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.0
+22:49:13 INFO Running optimizer 1/1: LBFGSOpt
+22:49:13 INFO Running optimizer 1/1: LBFGSOpt
+22:49:13 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.9
+22:49:15 INFO Running optimizer 1/1: LBFGSOpt
+22:49:15 INFO Running optimizer 1/1: LBFGSOpt
+22:49:15 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=100.9
+22:49:18 INFO Running optimizer 1/1: LBFGSOpt
+22:49:18 INFO Running optimizer 1/1: LBFGSOpt
+22:49:18 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.1
+22:49:20 INFO Running optimizer 1/1: LBFGSOpt
+22:49:20 INFO Running optimizer 1/1: LBFGSOpt
+22:49:20 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.7
+22:49:23 INFO Running optimizer 1/1: LBFGSOpt
+22:49:23 INFO Running optimizer 1/1: LBFGSOpt
+22:49:23 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=139.7
+22:49:26 INFO Running optimizer 1/1: LBFGSOpt
+22:49:26 INFO Running optimizer 1/1: LBFGSOpt
+22:49:26 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=114.2
+22:49:27 INFO   init46 [OK] plan=839ms exec=13129ms steps=640 wall=15.0s (SR=100% 97/97)
+22:49:28 INFO Running optimizer 1/1: LBFGSOpt
+22:49:28 INFO Running optimizer 1/1: LBFGSOpt
+22:49:28 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=112.2
+22:49:28 INFO Running optimizer 1/1: LBFGSOpt
+22:49:28 INFO Running optimizer 1/1: LBFGSOpt
+22:49:28 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=99.3
+22:49:31 INFO Running optimizer 1/1: LBFGSOpt
+22:49:31 INFO Running optimizer 1/1: LBFGSOpt
+22:49:31 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=95.0
+22:49:34 INFO Running optimizer 1/1: LBFGSOpt
+22:49:34 INFO Running optimizer 1/1: LBFGSOpt
+22:49:34 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.7
+22:49:35 INFO Running optimizer 1/1: LBFGSOpt
+22:49:35 INFO Running optimizer 1/1: LBFGSOpt
+22:49:35 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=96.2
+22:49:38 INFO Running optimizer 1/1: LBFGSOpt
+22:49:38 INFO Running optimizer 1/1: LBFGSOpt
+22:49:38 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=136.3
+22:49:41 INFO Running optimizer 1/1: LBFGSOpt
+22:49:41 INFO Running optimizer 1/1: LBFGSOpt
+22:49:41 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.1
+22:49:42 INFO   init47 [OK] plan=818ms exec=12944ms steps=637 wall=14.7s (SR=100% 98/98)
+22:49:43 INFO Running optimizer 1/1: LBFGSOpt
+22:49:43 INFO Running optimizer 1/1: LBFGSOpt
+22:49:43 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=107.9
+22:49:43 INFO Running optimizer 1/1: LBFGSOpt
+22:49:43 INFO Running optimizer 1/1: LBFGSOpt
+22:49:43 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.2
+22:49:46 INFO Running optimizer 1/1: LBFGSOpt
+22:49:46 INFO Running optimizer 1/1: LBFGSOpt
+22:49:46 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=96.6
+22:49:49 INFO Running optimizer 1/1: LBFGSOpt
+22:49:49 INFO Running optimizer 1/1: LBFGSOpt
+22:49:49 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=98.4
+22:49:50 INFO Running optimizer 1/1: LBFGSOpt
+22:49:50 INFO Running optimizer 1/1: LBFGSOpt
+22:49:50 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=97.6
+22:49:53 INFO Running optimizer 1/1: LBFGSOpt
+22:49:53 INFO Running optimizer 1/1: LBFGSOpt
+22:49:53 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=143.2
+22:49:56 INFO Running optimizer 1/1: LBFGSOpt
+22:49:56 INFO Running optimizer 1/1: LBFGSOpt
+22:49:56 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=103.6
+22:49:58 INFO   init48 [OK] plan=824ms exec=13296ms steps=651 wall=15.1s (SR=100% 99/99)
+22:49:58 INFO Running optimizer 1/1: LBFGSOpt
+22:49:58 INFO Running optimizer 1/1: LBFGSOpt
+22:49:58 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=114.6
+22:49:59 INFO Running optimizer 1/1: LBFGSOpt
+22:49:59 INFO Running optimizer 1/1: LBFGSOpt
+22:49:59 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=118.3
+22:50:02 INFO Running optimizer 1/1: LBFGSOpt
+22:50:02 INFO Running optimizer 1/1: LBFGSOpt
+22:50:02 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=106.6
+22:50:04 INFO Running optimizer 1/1: LBFGSOpt
+22:50:04 INFO Running optimizer 1/1: LBFGSOpt
+22:50:05 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=153.2
+22:50:06 INFO Running optimizer 1/1: LBFGSOpt
+22:50:06 INFO Running optimizer 1/1: LBFGSOpt
+22:50:06 INFO plan_directed_linear axes=['X', 'Y'] orient=LOCK plan_ms=101.9
+22:50:09 INFO Running optimizer 1/1: LBFGSOpt
+22:50:09 INFO Running optimizer 1/1: LBFGSOpt
+22:50:09 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=164.6
+22:50:12 INFO Running optimizer 1/1: LBFGSOpt
+22:50:12 INFO Running optimizer 1/1: LBFGSOpt
+22:50:12 INFO plan_directed_linear axes=['Z'] orient=LOCK plan_ms=101.5
+22:50:14 INFO   init49 [OK] plan=940ms exec=13555ms steps=651 wall=15.5s (SR=100% 100/100)
+22:50:14 INFO Shard done: SR=100.0% (100/100)
