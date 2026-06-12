@@ -281,3 +281,22 @@ class VABEnv(SingleArmEnv):
     @property
     def action_dim(self) -> int:
         return self.robots[0].action_dim
+
+    # ── Planning helpers ──────────────────────────────────────────────────────
+
+    def get_object_pose(self, obj_id: str) -> tuple:
+        """Live world-frame (position (3,), quaternion_wxyz (4,)) of obj_id."""
+        body_id = self._obj_body_id[obj_id]
+        return (
+            np.array(self.sim.data.body_xpos[body_id], dtype=np.float64),
+            np.array(self.sim.data.body_xquat[body_id], dtype=np.float64),
+        )
+
+    def get_eef_pose(self) -> tuple:
+        """Live world-frame (position (3,), quaternion_xyzw (4,)) of the grip site."""
+        from scipy.spatial.transform import Rotation
+        eef_id = self.robots[0].eef_site_id
+        pos = np.array(self.sim.data.site_xpos[eef_id], dtype=np.float64)
+        mat = np.array(self.sim.data.site_xmat[eef_id], dtype=np.float64).reshape(3, 3)
+        quat_xyzw = Rotation.from_matrix(mat).as_quat()
+        return pos, quat_xyzw
